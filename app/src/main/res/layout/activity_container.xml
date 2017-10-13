@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ashraf.fnfall.ContainerActivity">
+
+    <RelativeLayout
+        android:id="@+id/rel_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <include layout="@layout/tool_bar"></include>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_below="@+id/rel_one"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@drawable/ic_gp_template"
+        android:id="@+id/img_operator_icon"/>
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_below="@+id/img_operator_icon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:id="@+id/layout_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_weight="3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btn_new_fnf" style="@style/logo_button_style"
+                    android:background="@drawable/fnf_list"/>
+                <TextView
+                    style="@style/logo_hint_style"
+                    android:text="New"/>
+                <TextView
+                    style="@style/logo_hint_style"
+                    android:text="FnF"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_weight="3"
+                android:layout_toRightOf="@+id/linear_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btn_list_fnf" style="@style/logo_button_style"
+                    android:background="@drawable/fnf_new"/>
+                <TextView
+                    style="@style/logo_hint_style"
+                    android:text="FnF"/>
+                <TextView
+                    style="@style/logo_hint_style"
+                    android:text="LIST"/>
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:layout_weight="3"
+                android:layout_toRightOf="@+id/linear_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btn_internet_pack" style="@style/logo_button_style"
+                    android:background="@drawable/internet"/>
+                <TextView
+                    style="@style/logo_hint_style"
+                    android:text="Internet"/>
+                <TextView
+                    style="@style/logo_hint_style"
+                    android:text="Packege"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="50dp"
+            android:layout_below="@id/layout_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+
+            <LinearLayout
+                android:layout_weight="3"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btn_bundle_offer" style="@style/logo_button_style"
+                    android:background="@drawable/bundle_offer"/>
+                <TextView
+                    style="@style/logo_hint_style"
+                    android:text="Bundle"/>
+                <TextView
+                    style="@style/logo_hint_style"
+                    android:text="Offer"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="3"
+                android:gravity="center"
+                android:layout_toRightOf="@+id/linear_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btn_ussd" style="@style/logo_button_style"
+                    android:background="@drawable/ussd"/>
+                <TextView
+                    style="@style/logo_hint_style"
+                    android:text="Important"/>
+                <TextView
+                    style="@style/logo_hint_style"
+                    android:text="Ussd"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="3"
+                android:gravity="center"
+                android:layout_toRightOf="@+id/linear_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btn_package" style="@style/logo_button_style"
+                    android:background="@drawable/prepaid_packeg"/>
+                <TextView
+                    style="@style/logo_hint_style"
+                    android:text="Package"/>
+                <TextView
+                    style="@style/logo_hint_style"
+                    android:text="Info"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id">
+        </com.google.android.gms.ads.AdView>
+
+    </RelativeLayout>
+</RelativeLayout>

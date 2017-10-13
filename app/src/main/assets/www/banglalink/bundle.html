@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>BD All SIM Manager</title>
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/app.css" rel="stylesheet">
+    <link rel="apple-touch-icon" href="../images/sims.png" />
+
+    <script src="../js/angular.min.js"></script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../js/jquery.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/app.js"></script>
+</head>
+<body class="banglalink" ng-app="simApp">
+    ﻿
+    <div class="container">
+    	<div class="row">
+    		<h4 class="text-center">Bundle Offer</h4>
+    		<table class="table table-bordered table-condensed bundle-offer">
+    			<thead>
+    				<tr>
+    					<th colspan="3" data-field="offer">Bundle Offer</th>
+    					<th rowspan="2">USSD</th>
+    				</tr>
+    				<tr>
+    					<th data-field="charge">Charge</th>                        
+    					<th data-field="validity">Validity</th>
+    					<th>Time</th>
+    				</tr>
+    			</thead>
+    			<tbody class="text-center">
+    				<tr>
+    					<td colspan="3" class="offer">15 min + 5 MB + 5 SMS (BL)</td>
+    					<td rowspan="2"><a href="#" class="btn btn-default btn-xs" data-ussd="*132*5#">*132*5#</a></td>
+    				</tr>
+    				<tr>
+    					<td>5</td>
+    					<td>2 d</td>
+    					<td>12am to 5pm</td>
+    				</tr>
+    				<tr>
+    					<td colspan="3" class="offer">40 min + 40 SMS (BL)</td>
+    					<td rowspan="2"><a href="#" class="btn btn-default btn-xs" data-ussd="*132*2#">*132*2#</a></td>
+    				</tr>
+    				<tr>
+    					<td>10</td>
+    					<td>2 d</td>
+    					<td>12am to 5pm</td>
+    				</tr>
+    				<tr>
+    					<td colspan="3" class="offer">12 min + 12 MB + 12 SMS + 12 MMS (BL)</td>
+    					<td rowspan="2"><a href="#" class="btn btn-default btn-xs" data-ussd="*132*10#">*132*10#</a></td>
+    				</tr>
+    				<tr>
+    					<td>10</td>
+    					<td>2 d</td>
+    					<td>12am to 5pm</td>
+    				</tr>
+    				<tr>
+    					<td colspan="3" class="offer">75 min (Any), <br />75 MB + 75 SMS + 75 MMS (BL)</td>
+    					<td rowspan="2"><a href="#" class="btn btn-default btn-xs" data-ussd="*132*50#">*132*50#</a></td>
+    				</tr>
+    				<tr>
+    					<td>50</td>
+    					<td>7 d</td>
+    					<td>24 hr</td>
+    				</tr>
+    				<tr>
+    					<td colspan="3" class="offer">160 min (Any), <br />160 MB + 160 SMS + 160 MMS (BL)</td>
+    					<td rowspan="2"><a href="#" class="btn btn-default btn-xs" data-ussd="*132*100#">*132*100#</a></td>
+    				</tr>
+    				<tr>
+    					<td>100</td>
+    					<td>15 d</td>
+    					<td>24 hr</td>
+    				</tr>
+    				<tr>
+    					<td colspan="3" class="offer">500 min (Any), <br />200 MB + 200 SMS + 200 MMS (BL)</td>
+    					<td rowspan="2"><a href="#" class="btn btn-default btn-xs" data-ussd="*132*300#">*132*300#</a></td>
+    				</tr>
+    				<tr>
+    					<td>300</td>
+    					<td>30 d</td>
+    					<td>24 hr</td>
+    				</tr>
+    				<tr> 
+    				    <td colspan="4">To check bundle balance, dial:</td>
+    				</tr>
+    				<tr> 
+    				    <td colspan="4"><a class="btn btn-default btn-xs free" data-ussd="*124*6#">*124*6#</a> (for tk. 5 bundle)</td>
+    				</tr>
+    				<tr> 
+    				    <td colspan="4"><a class="btn btn-default btn-xs free" data-ussd="*124*7#">*124*7#</a> (for all other bundles)</td>
+    				</tr>
+    			</tbody>
+    		</table>
+    	</div>
+    </div>
+
+	﻿<div class="container">
+		<div class="row">
+			<h4 class="text-center"> SMS Bundle</h4>
+			<table class="table table-bordered table-condensed bundle-offer">
+				<thead>
+				<tr>
+					<th colspan="2" data-field="offer">Bundle Offer</th>
+					<th rowspan="2">USSD</th>
+				</tr>
+				<tr>
+					<th data-field="charge">Charge</th>
+					<th data-field="validity">Validity</th>
+				</tr>
+				</thead>
+				<tbody class="text-center">
+				<tr>
+					<td colspan="2" class="offer">*100 SMS (BL-BL)</td>
+					<td rowspan="2"><a href="#" class="btn btn-default btn-xs" data-ussd="*222*8#">*222*8#</td>
+				</tr>
+				<tr>
+					<td>2.99</td>
+					<td>1 d</td>
+				</tr>
+				<tr>
+					<td colspan="2" class="offer">500 SMS (BL-BL)</td>
+					<td rowspan="2"><a href="#" class="btn btn-default btn-xs" data-ussd="*132*1#">*132*1#</td>
+				</tr>
+				<td>5</td>
+				<td>1 d</td>
+				</tr>
+				<tr>
+					<td colspan="2" class="offer">1000 SMS (BL-BL)</td>
+					<td rowspan="2"><a href="#" class="btn btn-default btn-xs" data-ussd="*132*20#">*132*20#</td>
+				</tr>
+				<td>19</td>
+				<td>8 d</td>
+				</tr>
+				<tr>
+					<td colspan="3">
+						*Auto-renewal feature will be set as default. <br> Please dial <a class="btn btn-default btn-xs" data-ussd="*222*9#" data-confirm="Are you sure you want to deactivate the bundle?">*222*9#</a> to deactivate.</tr>
+				</td>
+				</tr>
+				</tbody>
+			</table>
+			<h4 class="text-center">Voice Bundle</h4>
+			<table class="table table-bordered table-condensed bundle-offer">
+				<thead>
+				<tr>
+					<th colspan="3" data-field="offer">Bundle Offer</th>
+					<th rowspan="2">USSD</th>
+				</tr>
+				<tr>
+					<th data-field="charge">Charge</th>
+					<th data-field="validity">Validity</th>
+					<th>Time</th>
+				</tr>
+				</thead>
+				<tbody class="text-center">
+				<tr>
+					<td colspan="3" class="offer">8 Minutes (BL-BL)</td>
+					<td rowspan="2"><a href="#" class="btn btn-default btn-xs" data-ussd="*121*10#">*121*10#</a></td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>1</td>
+					<td>4 hr</td>
+				</tr>
+				</tbody>
+			</table>
+
+			<h4 class="text-center">Balance Check</h4>
+
+			<table class="table table-bordered table-condensed internet-package">
+				<thead>
+				<tr>
+					<th>Bundle Offer</th>
+					<th>USSD</th>
+				</tr>
+				</thead>
+				<tbody class="text-center">
+				<tr>
+					<td>100 SMS</td>
+					<td><a href="#" class="btn btn-default btn-xs free" data-ussd="*124*33#">*124*33#</a></td>
+				</tr>
+				<tr>
+					<td>500 SMS</td>
+					<td><a href="#" class="btn btn-default btn-xs free" data-ussd="*124*2#">*124*2#</a></td>
+				</tr>
+				<tr>
+					<td>1000 SMS</td>
+					<td><a href="#" class="btn btn-default btn-xs free" data-ussd="*124*33#">*124*33#</a></td>
+				</tr>
+				<tr>
+					<td>8 Minutes</td>
+					<td><a href="#" class="btn btn-default btn-xs free" data-ussd="*124*90#">*124*90#</a></td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</body>
+</html>

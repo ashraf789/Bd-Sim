@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>BD All SIM Manager</title>
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/app.css" rel="stylesheet">
+    <link rel="apple-touch-icon" href="../images/sims.png" />
+
+    <script src="../js/angular.min.js"></script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../js/jquery.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/app.js"></script>
+</head>
+<body class="teletalk" ng-app="simApp">
+    ﻿<body class="teletalk">
+    <div class="container">
+    	<div class="row">
+    		<div class="well well-sm text-center">
+    			Check Current Package (Free) <a class="btn btn-default btn-xs" href="#" data-message="P" data-number="154">154</a>
+    		</div>
+		
+    		<table class="table table-bordered table-condensed">
+    			<thead>
+    				<tr>
+    					<th colsPan="2">Bornomala</th>
+    				</tr>
+    			</thead>
+    			<tbody>
+    				<tr>
+    					<td class="header">Tele to Tele</td>
+    					<td>5 P/10 Sec (24 hr)</td>
+    				</tr>
+    				<tr>
+    					<td class="header">Tele to Any</td>
+    					<td>10 P/10 Sec (24 hr)</td>
+    				</tr>
+    				<tr>
+    					<td>Video Call (Tele)</td>
+    					<td>5 P/10 Sec (24hr)</td>
+    				</tr>
+    				<tr>
+    					<td>No of FnF</td>
+    					<td>N/A</td>
+    				</tr>
+    				<tr>
+    					<td>SMS (Tele)</td>
+    					<td>30 P/ SMS (24hr)</td>
+    				</tr>
+    				<tr>
+    					<td>SMS (Any)</td>
+    					<td>40 P/ SMS (24hr)</td>
+    				</tr>
+    				<tr>
+    					<td>MMS(Tele)</td>
+    					<td>Tk 1/ MMS (24 hr)</td>
+    				</tr>
+    				 <tr>
+    					<td>Recharge Bonus</td>
+    					<td>Recharge Tk 30, Get-30 min, 30 MB, 30 SMS</td>
+    				</tr>
+    				<tr>
+    					<td>Migrate</td>
+    					<td>"Not Possible To Migrate"</td>
+    				</tr>
+    			</tbody>
+    		</table>
+		
+    		<table class="table table-bordered table-condensed">
+    			<thead>
+    				<tr>
+    					<th colsPan="2">Agami</th>
+    				</tr>
+    			</thead>
+    			<tbody>
+    				<tr>
+    					<td class="header">Tele to Tele</td>
+    					<td>4.17 P/10 Sec (24 hr)</td>
+    				</tr>
+    				<tr>
+    					<td class="header">Tele to Any</td>
+    					<td>10 P/10 Sec (24 hr)</td>
+    				</tr>
+    				<tr>
+    					<td>Video Call (Tele)</td>
+    					<td>4.17 P/10 Sec (24hr)</td>
+    				</tr>
+    				<tr>
+    					<td>No of FnF</td>
+    					<td>N/A</td>
+    				</tr>
+    				<tr>
+    					<td>SMS (Tele)</td>
+    					<td>25 P/ SMS (24hr)</td>
+    				</tr>
+    				<tr>
+    					<td>SMS (Any)</td>
+    					<td>35 P/ SMS (24hr)</td>
+    				</tr>
+    				 <tr>
+    					<td>Recharge Bonus</td>
+    					<td>Recharge Tk 25, Get-25 min, 25 MB, 25 SMS</td>
+    				</tr>
+    				<tr>
+    					<td>Migrate</td>
+    					<td>"Not Possible To Migrate"</td>
+    				</tr>
+    			</tbody>
+    		</table>
+		
+    		<table class="table table-bordered table-condensed">
+    			<thead>
+    				<tr>
+    					<th colsPan="2">Projonmo</th>
+    				</tr>
+    			</thead>
+    			<tbody>
+    				<tr>
+    					<td rowsPan="2" class="header">Tele to Tele</td>
+    					<td>10 P/10 Sec (8am - 12am)</td>
+    				</tr>
+    				<tr>                        
+    					<td>5 P/10 Sec (12am - 8am)</td>                        
+    				</tr>
+    				<tr>
+    					<td class="header">Tele to Any</td>
+    					<td>16 P/5 Sec (24hr)</td>
+    				</tr>
+    				<tr>
+    					<td>No of FnF</td>
+    					<td>1 FnF (Any)</td>
+    				</tr>
+    				<tr>
+    					<td>FnF (Tele)</td>
+    					<td>4.17 P/10 Sec (24 hr)</td>
+    				</tr>
+    				<tr>
+    					<td>SMS (FnF)</td>
+    					<td>20 P/ SMS (24 hr)</td>
+    				</tr>
+    				<tr>
+    					<td>SMS (Tele)</td>
+    					<td>35 P/SMS (24 hr)</td>
+    				</tr>
+    				<tr>
+    					<td>SMS (Any)</td>
+    					<td>45 P/ SMS (24 hr)</td>
+    				</tr>
+    				<tr>
+    					<td>Migrate</td>
+    					<td>"Not Possible To Migrate"</td>
+    				</tr>
+    			</tbody>
+    		</table>
+
+    		<table class="table table-bordered table-condensed">
+    			<thead>
+    				<tr>
+    					<th colsPan="2">Youth</th>
+    				</tr>
+    			</thead>
+    			<tbody>
+    				<tr>
+    					<td rowsPan="2" class="header">Tele to Tele</td>
+    					<td>4.5 P/5 Sec (8am - 12am)</td>
+    				</tr>
+    				<tr>                        
+    					<td>2.5 P/5 Sec (12am - 8am)</td>                        
+    				</tr>
+    				<tr>
+    					<td class="header">Tele to Any</td>
+    					<td>7.5 P/5 Sec  (24hr)</td>
+    				</tr>
+    				<tr>
+    					<td>No of FnF</td>
+    					<td>3 FnF (Any)</td>
+    				</tr>
+    				<tr>
+    					<td>FnF (Tele)</td>
+    					<td>2.1 P/5 Sec (24 hr)</td>
+    				</tr>
+    				<tr>
+    					<td>FnF (Any)</td>
+    					<td>5 P/5 Sec (24 hr)</td>
+    				</tr>
+    				<tr>
+    					<td>SMS (FnF)</td>
+    					<td>18 P/ SMS (24 hr)</td>
+    				</tr>
+    				<tr>
+    					<td>SMS (Tele)</td>
+    					<td>30 P/SMS (24 hr)</td>
+    				</tr>
+    				<tr>
+    					<td>SMS (Any)</td>
+    					<td>40 P/ SMS (24 hr)</td>
+    				</tr>
+    				<tr>
+    					<td>MMS (Tele)</td>
+    					<td>Tk. 1/ MMS (24 hr)</td>
+    				</tr>
+    				<tr>
+    					<td>Migrate</td>
+    					<td>"Not Possible To Migrate"</td>
+    				</tr>
+    			</tbody>
+    		</table>
+		
+    		<table class="table table-bordered table-condensed">
+    			<thead>
+    				<tr>
+    					<th colsPan="2">Ekush</th>
+    				</tr>
+    			</thead>
+    			<tbody>
+    				<tr>
+    					<td rowsPan="2" class="header">Tele to Tele</td>
+    					<td>10 P/10 Sec (8am - 12am)</td>
+    				</tr>
+    				<tr>                        
+    					<td>5 P/10 Sec (12am - 8am)</td>                        
+    				</tr>
+    				<tr>
+    					<td rowsPan="2" class="header">Tele to Any</td>
+    					<td>20 P/10 Sec (8am - 12am)</td>
+    				</tr>
+    				<tr>                        
+    					<td>10 P/10 Sec (8am - 12am)</td>                        
+    				</tr>
+    				<tr>
+    					<td>No of FnF</td>
+    					<td>9 FnF (Any)</td>
+    				</tr>
+    				<tr>
+    					<td>FnF (Tele)</td>
+    					<td>4.17 P/10 Sec (24 hr)</td>
+    				</tr>
+    				<tr>
+    					<td>FnF (Any)</td>
+    					<td>11 P/10 Sec (24 hr)</td>
+    				</tr>
+    				<tr>
+    					<td>SMS (FnF)</td>
+    					<td>21 P/ SMS (24 hr)</td>
+    				</tr>
+    				<tr>
+    					<td>SMS (Tele)</td>
+    					<td>35 P/SMS (24 hr)</td>
+    				</tr>
+    				<tr>
+    					<td>SMS (Any)</td>
+    					<td>45 P/ SMS (24 hr)</td>
+    				</tr>
+    				<tr>
+    					<td>MMS</td>
+    					<td>Tk. 1/ MMS (24 hr)</td>
+    				</tr>
+    				<tr>
+    					<td>Migrate</td>
+    					<td>'21' to 555 <a class="btn btn-default btn-xs" data-message="21" data-number="555">Activate</a></td>
+    				</tr>
+    			</tbody>
+    		</table>
+		
+    		<table class="table table-bordered table-condensed">
+    			<thead>
+    				<tr>
+    					<th colsPan="2">Bijoy</th>
+    				</tr>
+    			</thead>
+    			<tbody>
+    				<tr>
+    					<td rowsPan="2" class="header">Tele to Tele</td>
+    					<td>1.2 P/ Sec (8am - 12am)</td>
+    				</tr>
+    				<tr>                        
+    					<td>0.05 P/ Sec (12am - 8am)</td>                        
+    				</tr>
+    				<tr>
+    					<td rowsPan="2" class="header">Tele to Any</td>
+    					<td>1.8 P/ Sec (8am - 12am)</td>
+    				</tr>
+    				<tr>                        
+    					<td>1.2 P/ Sec (8am - 12am)</td>                        
+    				</tr>
+    				<tr>
+    					<td>No of FnF</td>
+    					<td>4 FnF (Any)</td>
+    				</tr>
+    				<tr>
+    					<td>FnF (Tele)</td>
+    					<td>4.17P/1 Sec (24 hr)</td>
+    				</tr>
+    				<tr>
+    					<td>FnF (Any)</td>
+    					<td>1 P/1 Sec (24 hr)</td>
+    				</tr>
+    				<tr>
+    					<td>MMS</td>
+    					<td>Tk 2/ MMS (24 hr)</td>
+    				</tr>
+    				<tr>
+    					<td>SMS (Tele)</td>
+    					<td>35 P/SMS (24 hr)</td>
+    				</tr>
+    				<tr>
+    					<td>SMS (Any)</td>
+    					<td>45 P/ SMS (24 hr)</td>
+    				</tr>
+    				<tr>
+    					<td>Migrate</td>
+    					<td>'bij' to 555 <a class="btn btn-default btn-xs" data-message="bij" data-number="555">Activate</a></td>
+    				</tr>
+    			</tbody>
+    		</table>
+		
+    		<table class="table table-bordered table-condensed">
+    			<thead>
+    				<tr>
+    					<th colsPan="2">Standard</th>
+    				</tr>
+    			</thead>
+    			<tbody>
+    				<tr>
+    					<td rowsPan="3" class="header">Tele to Tele</td>
+    					<td>26.83 P/10 Sec (6 Pm - 12 pm)</td>
+    				</tr>
+    				<tr>                        
+    					<td>18.20 P/10 Sec (8 am - 6 pm)</td>                        
+    				</tr>
+    				<tr>                        
+    					<td>10.03 P/10 Sec  (12 am - 8 am)</td>                        
+    				</tr>
+    				<tr>
+    					<td rowsPan="3" class="header">Tele to Any</td>
+    					<td>31.67 P/10 Sec (6 Pm - 12 pm)</td>
+    				</tr>
+    				<tr>                        
+    					<td>18.37 P/10 Sec (8 am - 6 pm)</td>                        
+    				</tr>
+    				<tr>                        
+    					<td>16.78 P/10 Sec (12 am - 8 am)</td>                        
+    				</tr>
+    				<tr>
+    					<td>No of FnF</td>
+    					<td>N/A</td>
+    				</tr>
+    				<tr>
+    					<td>MMS</td>
+    					<td>Tk 2/ MMS (24 hr)</td>
+    				</tr>
+    				<tr>
+    					<td>SMS (Any)</td>
+    					<td>50 P/ SMS (24 hr)</td>
+    				</tr>
+    				<tr>
+    					<td>Voice SMS (Any)</td>
+    					<td>Tk 2/ SMS (24hr)</td>
+    				</tr>
+    				<tr>
+    					<td>Migrate</td>
+    					<td>'nor' to 555 <a class="btn btn-default btn-xs" data-message="nor" data-number="555">Activate</a></td>
+    				</tr>
+    			</tbody>
+    		</table>
+		
+    		<table class="table table-bordered table-condensed">
+    			<thead>
+    				<tr>
+    					<th colsPan="2">Shadheen</th>
+    				</tr>
+    			</thead>
+    			<tbody>
+    				<tr>
+    					<td class="header">Tele to Tele</td>
+    					<td>12 P/10 Sec (24 hr)</td>
+    				</tr>
+    				<tr>
+    					<td class="header">Tele to Any</td>
+    					<td>16 P/10 Sec (24 hr)</td>
+    				</tr>
+    				<tr>
+    					<td>No of FnF</td>
+    					<td>3 FnF (Any)</td>
+    				</tr>
+    				<tr>
+    					<td>FnF (Tele)</td>
+    					<td>4.17 P/10 Sec (24 hr)</td>
+    				</tr>
+    				<tr>
+    					<td>FnF (Any)</td>
+    					<td>10 P/10 Sec (24 hr)</td>
+    				</tr>
+    				<tr>
+    					<td>SMS (Tele)</td>
+    					<td>35 P/ SMS (24hr)</td>
+    				</tr>
+    				<tr>
+    					<td>SMS (Any)</td>
+    					<td>50 P/ SMS (24hr)</td>
+    				</tr>
+    				<tr>
+    					<td>Voice SMS (Any)</td>
+    					<td>Tk 2/ SMS (24hr)</td>
+    				</tr>
+    				<tr>
+    					<td>MMS</td>
+    					<td>Tk 1/ MMS (24 hr)</td>
+    				</tr>
+    				<tr>
+    					<td>Migrate</td>
+    					<td>'sha' to 555 <a class="btn btn-default btn-xs" data-message="sha" data-number="555">Activate</a></td>
+    				</tr>
+    			</tbody>
+    		</table>
+		
+    		<table class="table table-bordered table-condensed">
+    			<thead>
+    				<tr>
+    					<th colsPan="2">Shapla</th>
+    				</tr>
+    			</thead>
+    			<tbody>
+    				<tr>
+    					<td class="header">Tele to Any</td>
+    					<td>1.5 P/10 Sec (24 hr)</td>
+    				</tr>
+    				<tr>
+    					<td>SMS (Any)</td>
+    					<td>50 P/ SMS (24hr)</td>
+    				</tr>
+    				<tr>
+    					<td>Voice SMS (Any)</td>
+    					<td>Tk 2/ SMS (24hr)</td>
+    				</tr>
+    				<tr>
+    					<td>Migrate</td>
+    					<td>"Not Possible To Migrate"</td>
+    				</tr>
+    			</tbody>
+    		</table>
+		
+    		<table class="table table-bordered table-condensed">
+                <thead>
+                    <tr>
+                        <th colsPan="2">Recharge Offer</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td colsPan="2"><b>Recharge Tk. 33</b></td></tr>
+                    <tr>
+                        <td class="header">Tele to Tele</td>
+                        <td>5 P/10 Sec (24hr)</td>
+                    </tr>
+    				<tr>
+                        <td class="header">Tele to Any</td>
+                        <td>10 P/10 Sec (24hr)</td>
+                    </tr>
+    				<tr>
+                        <td>Free Data</td>
+                        <td>33 MB (for 1 Day)</td>
+                    </tr>
+    				<tr>
+                        <td>Validity</td>
+                        <td>10 Days</td>
+                    </tr>
+
+                    <tr><td colsPan="2"><b>Recharge Tk. 73</b></td></tr>
+                    <tr>
+                        <td class="header">Tele to Tele</td>
+                        <td>5 P/10 Sec (24hr)</td>
+                    </tr>
+    				<tr>
+                        <td class="header">Tele to Any</td>
+                        <td>10 P/10 Sec (24hr)</td>
+                    </tr>
+                    <tr>
+                        <td>Free Data</td>
+                        <td>73 MB (for 3 Days)</td>
+                    </tr>
+    				<tr>
+                        <td>Validity</td>
+                        <td>30 Days</td>
+                    </tr>
+                </tbody>
+            </table>
+    	</div>
+    </div>
+
+    <scriPt tyPe="text/javascriPt">
+    	function getUSSDParameters(button) {
+
+    		var table = button.closest('table');
+    		var Pkg = table.find('thead th').text();
+
+    		var message = 'Are you sure you want to change your Package?';
+
+    		return { title: Pkg, message: message };
+    	}
+    </scriPt>
+</body>
+</html>

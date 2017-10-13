@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>BD All SIM Manager</title>
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/app.css" rel="stylesheet">
+    <link rel="apple-touch-icon" href="../images/sims.png" />
+
+    <script src="../js/angular.min.js"></script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../js/jquery.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/app.js"></script>
+</head>
+<body class="airtel" ng-app="simApp">
+    ﻿<div class="container">
+    	<div class="row">
+    		<div class="well well-sm text-center">
+    			Check Internet Balance (Free) <a class="btn btn-default btn-xs" href="#" data-ussd="*778*555#">*778*555#</a> OR <a class="btn btn-default btn-xs" href="#" data-ussd="*778*40#">*778*40#</a>
+    		</div>
+
+    		<h4 class="text-center">3G Internet Packs (Pre & Postpaid)</h4>
+
+    		<table class="table table-bordered table-condensed internet-package">
+    			<thead>
+    				<tr>
+    					<th data-field="volume">Volume</th>
+    					<th data-field="validity">Validity</th>
+    					<th data-field="charge">Price</th>
+    					<th>USSD</th>
+    				</tr>
+    			</thead>
+    			<tbody class="text-center">
+    				<tr>
+    					<td>30 MB</td>
+    					<td>1 d</td>
+    					<td>9</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*121*150#">*121*150#</a></td>
+    				</tr>
+    				<tr>
+    					<td>30 MB</td>
+    					<td>2 d</td>
+    					<td>10</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*121*781#">*121*781#</a></td>
+    				</tr>
+    				<tr>
+    					<td>45 MB</td>
+    					<td>1 d</td>
+    					<td>10</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*121*782#">*121*782#</a></td>
+    				</tr>
+    				<tr>
+    					<td>60 MB</td>
+    					<td>3 d</td>
+    					<td>15</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*121*5001#">*121*5001#</a></td>
+    				</tr>
+    				<tr>
+    					<td>100 MB</td>
+    					<td>7 d</td>
+    					<td>20</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*121*771#">*121*771#</a></td>
+    				</tr>
+    				<tr>
+    					<td>250 MB</td>
+    					<td>7 d</td>
+    					<td>50</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*121*5003#">*121*5003#</a></td>
+    				</tr>
+    				<tr>
+    					<td>515 MB</td>
+    					<td>7 d</td>
+    					<td>100</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*121*5011#">*121*5011#</a></td>
+    				</tr>
+    				<tr>
+    					<td>3 GB
+    					    <a class="btn btn-default btn-xs pull-right" data-toggle="popover" title="200% Bonus!" data-content="1 GB Packs + 2 GB Bonus (Packs validity 30 d, Bonus validity 7 d)"  data-placement="top">
+    							<span class="glyphicon glyphicon-exclamation-sign"></span>
+    						</a>
+    					</td>
+    					<td>30 d</td>
+    					<td>199</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*121*5014#">*121*5014#</a></td>
+    				</tr>
+    				<tr>
+    					<td>1.5 GB</td>
+    					<td>30 d</td>
+    					<td>275</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*121*731#">*121*731#</a></td>
+    				</tr>
+    				<tr>
+    					<td>6 GB
+    					    <a class="btn btn-default btn-xs pull-right" data-toggle="popover" title="200% Bonus!" data-content="2 GB Packs + 4 GB Bonus (Packs validity 30 d, Bonus validity 10 d)"  data-placement="top">
+    							<span class="glyphicon glyphicon-exclamation-sign"></span>
+    						</a>
+    					</td>
+    					<td>30 d</td>
+    					<td>350</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*121*5020#">*121*5020#</a></td>
+    				</tr>
+    				<tr>
+    					<td>2 GB (FUP)</td>
+    					<td>30 d</td>
+    					<td>450</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-ussd=*121*5022#>*121*5022#</a></td>
+    				</tr>
+    				<tr>
+    					<td>3 GB</td>
+    					<td>30 d</td>
+    					<td>450</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*121*5025#">*121*5025#</a></td>
+    				</tr>
+    				<tr>
+    					<td>5 GB</td>
+    					<td>30 d</td>
+    					<td>650</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*121*711#">*121*711#</a></td>
+    				</tr>
+    				<tr>
+    					<td>8 GB</td>
+    					<td>30 d</td>
+    					<td>950</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*121*5040#">*121*5040#</a></td>
+    				</tr>
+    			</tbody>
+    		</table>
+		
+    		<h4 class="text-center">Video Packs</h4>
+
+    		<table class="table table-bordered table-condensed internet-package">
+    			<thead>
+    				<tr>
+    					<th data-field="volume">Volume</th>
+    					<th data-field="validity">Validity</th>
+    					<th data-field="charge">Charge</th>
+    					<th>USSD</th>
+    				</tr>
+    			</thead>
+    			<tbody class="text-center">
+    				<tr>
+    					<td>75 MB</td>
+    					<td>2 d</td>
+    					<td>10</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*121*641#">*121*641#</a></td>
+    				</tr>
+    				<tr>
+    					<td>400 MB</td>
+    					<td>7 d</td>
+    					<td>50</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*121*642#">*121*642#</a></td>
+    				</tr>
+    				<tr>
+    					<td>1 GB</td>
+    					<td>30 d</td>
+    					<td>130</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*121*643#">*121*643#</a></td>
+    				</tr>
+    			</tbody>
+    		</table>
+		
+    		<h4 class="text-center">Night Packs</h4>
+
+    		<table class="table table-bordered table-condensed internet-package">
+    			<thead>
+    				<tr>
+    					<th data-field="volume">Volume</th>
+    					<th data-field="validity"Validity</th>
+    					<th data-field="charge">Charge</th>
+    					<th>Time</th>
+    					<th>USSD</th>
+    				</tr>
+    			</thead>
+    			<tbody class="text-center">
+    				<tr>
+    					<td>500 MB</td>
+    					<td>15 d</td>
+    					<td>55</td>
+    					<td>1 am - 8 am</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*121*5053#">*121*5053#</a></td>
+    				</tr>
+    				<tr>
+    					<td>1 GB</td>
+    					<td>15 d</td>
+    					<td>150</td>
+    					<td>1 am - 8 am</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*121*99#">*121*99#</a></td>
+    				</tr>
+    				<tr>
+    					<td>1 GB</td>
+    					<td>30 d</td>
+    					<td>99</td>
+    					<td>1 am - 8 am</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*121*5052#">*121*5052#</a></td>
+    				</tr>
+    				<tr>
+    					<td>7 GB</td>
+    					<td>30 d</td>
+    					<td>499</td>
+    					<td>1 am - 8 am</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-ussd="**121*5051#">*121*5051#</a></td>
+    				</tr>
+    			</tbody>
+    		</table>
+		
+    		<h4 class="text-center">Recharge 3G Packs (Prepaid)</h4>
+
+    		<table class="table table-bordered table-condensed internet-package">
+    			<thead>
+    				<tr>
+    					<th>Volume</th>
+    					<th>Validity</th>
+    					<th>Activation</th>
+    					<th>Balance Check</th>
+    				</tr>
+    			</thead>
+    			<tbody class="text-center">
+    				<tr>
+    					<td>60 MB</td>
+    					<td>3 d</td>
+    					<td>Recharge 17</td>
+    					<td rowspan="4"><a href="#" class="btn btn-default btn-xs free" data-ussd="*778*4#">*778*4#</a></td>
+    				</tr>
+    				<tr>
+    					<td>425 MB</td>
+    					<td>7 d</td>
+    					<td>Recharge 98</td>
+    				</tr>
+    				<tr>
+    					<td>3 GB</td>
+    					<td>30 d</td>
+    					<td>Recharge 517</td>
+    				</tr>
+    				<tr>
+    					<td>5 GB</td>
+    					<td>30 d</td>
+    					<td>Recharge 747</td>
+    				</tr>
+    				<tr>
+    					<td>3 GB
+    					    <a class="btn btn-default btn-xs pull-right" data-toggle="popover" title="200% Bonus!" data-content="1 GB Packs + 2 GB Bonus (Packs validity 30 d, Bonus validity 7 d)"  data-placement="top">
+    							<span class="glyphicon glyphicon-exclamation-sign"></span>
+    						</a>
+    					</td>
+    					<td>30 d</td>
+    					<td>Recharge 229</td>
+    					<td rowspan="3"><a href="#" class="btn btn-default btn-xs free" data-ussd="*778*40#">*778*40#</a></td>
+    				</tr>
+    				<tr>
+    					<td>6 GB
+    					    <a class="btn btn-default btn-xs pull-right" data-toggle="popover" title="200% Bonus!" data-content="2 GB Packs + 4 GB Bonus (Packs validity 30 d, Bonus validity 10 d)"  data-placement="top">
+    							<span class="glyphicon glyphicon-exclamation-sign"></span>
+    						</a>
+    					</td>
+    					<td>30 d</td>
+    					<td>Recharge 398</td>
+    				</tr>
+    				<tr>
+    					<td>6 GB
+    						<a class="btn btn-default btn-xs pull-right" data-toggle="popover" title="Attention!" data-content="User will be able to use 2 GB every 30 days."  data-placement="top">
+    							<span class="glyphicon glyphicon-exclamation-sign"></span>
+    						</a>
+    					</td>
+    					<td>90 d</td>
+    					<td>Recharge 863</td>
+    				</tr>
+    			</tbody>
+    		</table>
+    	</div>
+    </div>
+
+
+
+
+	﻿<div class="container">
+		<div class="row">
+			<h4 class="text-center">Facebook Packs</h4>
+			<table class="table table-bordered table-condensed bundle-offer">
+				<thead>
+				<tr>
+					<th data-field="volume">Volume</th>
+					<th data-field="charge">Cost</th>
+					<th data-field="validity">Validity</th>
+					<th>USSD</th>
+				</tr>
+				</thead>
+				<tbody class="text-center">
+				<tr>
+					<td>4 MB</td>
+					<td>2</td>
+					<td>1 d</td>
+					<td><a class="btn btn-default btn-xs" data-ussd="*121*92#">*121*92#</a></td>
+				</tr>
+				<tr>
+					<td>50 MB</td>
+					<td>5</td>
+					<td>2 d</td>
+					<td><a class="btn btn-default btn-xs" data-ussd="*121*90#">*121*90#</a></td>
+				</tr>
+				<tr>
+					<td>120 MB</td>
+					<td>10</td>
+					<td>3 d</td>
+					<td><a class="btn btn-default btn-xs" data-ussd="*121*91#">*121*91#</a></td>
+				</tr>
+				<tr>
+					<td>100 MB</td>
+					<td>35</td>
+					<td>7 d</td>
+					<td><a class="btn btn-default btn-xs" data-ussd="*121*126#">*121*126#</a></td>
+				</tr>
+				<tr>
+					<td>250 MB</td>
+					<td>80</td>
+					<td>15 d</td>
+					<td><a class="btn btn-default btn-xs" data-ussd="*121*125#">*121*125#</a></td>
+				</tr>
+				<tr>
+					<td>500 MB</td>
+					<td>150</td>
+					<td>30 d</td>
+					<td><a class="btn btn-default btn-xs" data-ussd="*121*124#">*121*124#</a></td>
+				</tr>
+				<tr>
+					<td colspan="4">To check volume, dial <a class="btn btn-default btn-xs free" data-ussd="*778*37#">*778*37#</a></td>
+				</tr>
+				</tbody>
+			</table>
+
+			<h4 class="text-center">Free Facebook</h4>
+			<table class="table table-bordered table-condensed bundle-offer">
+				<thead>
+				<tr>
+					<th>Click<a class="btn btn-default btn-xs" href="http://0.facebook.com">0.facebook.com</a></th>
+				</tr>
+				</thead>
+				<tbody class="text-center">
+				<tr>
+					<td>Data Charges Applicable only:<br />1. If you connect any other link/site. <br />2. If you open any picture or images in the page. </td>
+				</tr>
+				</tbody>
+			</table>
+
+			<h4 class="text-center">Other Social Packs</h4>
+			<table class="table table-bordered table-condensed bundle-offer">
+				<thead>
+				<tr>
+					<th>Pack</th>
+					<th>Volume</th>
+					<th>Cost</th>
+					<th>Validity</th>
+					<th>USSD</th>
+				</tr>
+				</thead>
+				<tbody class="text-center">
+				<tr>
+					<td>WhatsApp</td>
+					<td>20 MB</td>
+					<td>Free</td>
+					<td>1 d</td>
+					<td>N/A</td>
+				</tr>
+				<tr>
+					<td>Twitter</td>
+					<td>20 MB</td>
+					<td>Free</td>
+					<td>1 d</td>
+					<td>N/A</td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</body>
+</html>

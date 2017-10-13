@@ -1,0 +1,346 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>BD All SIM Manager</title>
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/app.css" rel="stylesheet">
+    <link rel="apple-touch-icon" href="../images/sims.png" />
+
+    <script src="../js/angular.min.js"></script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../js/jquery.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/app.js"></script>
+</head>
+<body class="grameenphone" ng-app="simApp">
+    ﻿<div class="container">
+    	<div class="row">
+    		<div class="well well-sm text-center">
+    			Check Current Package (Free) <a class="btn btn-default btn-xs" href="#" data-ussd="*111*7*2#">*111*7*2#</a>
+    		</div>
+    		<div>
+    			<td>
+    			<div class="well well-sm text-align">
+    			   Note:<br />
+    			   1. Packages can be changed every day. <br />
+    			   2. FnFs can be changed any time but a deleted FnF can be added after 15 days.
+    			 </div>
+    			</td>
+    		</div>
+
+    		<table class="table table-bordered table-condensed">
+    			<thead>
+    				<tr>
+    					<th colspan="2">Nishchinto</th>
+    				</tr>
+    			</thead>
+    			<tbody>
+    				<tr>
+    					<td class="header">GP to Any</td>
+    					<td>16.66 p/10 sec (24hr)</td>
+    				</tr>
+    				<tr>
+    					<td>SMS (Any)</td>
+    					<td>50 p/ SMS (24hr)</td>
+    				</tr>
+    				<tr>
+    					<td>No of FnF</td>
+    					<td>N/A</td>
+    				</tr>
+    				<tr>
+    					<td>Migrate</td>
+    					<td>'N' to 4444 
+						<a class="btn btn-default btn-xs" 
+						data-message="N" 						data-number="4444">Activate</a>
+					</td>
+    				</tr>
+    			</tbody>
+    		</table>
+	
+    		<table class="table table-bordered table-condensed">
+    			<thead>
+    				<tr>
+    					<th colspan="2">Bondhu</th>
+    				</tr>
+    			</thead>
+    			<tbody>
+    				<tr>
+    					<td class="header">GP to Any</td>
+    					<td>26.5 p/10 sec (24hr)</td>
+    				</tr>
+    				<tr>
+    					<td>SMS (Any)</td>
+    					<td>50 p/ SMS (24hr)</td>
+    				</tr>
+    				<tr>
+    					<td>No of FnF</td>
+    					<td>1 Super (GP) + 17 Any</td>
+    				</tr>
+    				<tr>
+    					<td>FnF (Super)</td>
+    					<td>5.5 p/10 sec (24hr)</td>
+    				</tr>
+    				<tr>
+    					<td>FnF (Any)</td>
+    					<td>11.5 p/10 sec (24hr)</td>
+    				</tr>
+    				<tr>
+    					<td>Migrate</td>
+    					<td>'B' to 4444 <a class="btn btn-default btn-xs" data-message="B" data-number="4444">Activate</a></td>
+    				</tr>
+    			</tbody>
+    		</table>
+		
+    		<table class="table table-bordered table-condensed">
+    			<thead>
+    				<tr>
+    					<th colspan="2">Djuice</th>
+    				</tr>
+    			</thead>
+    			<tbody>
+    				<tr>
+    					<td class="header">Community</td>
+    					<td>11 p/ 10 sec (24hr)</td>
+    				</tr>
+    				<tr>
+    					<td>GP to Any</td>
+    					<td>26.50 p/ 10 sec (24hr)</td>
+    				</tr>
+    				<tr>
+    					<td>SMS (Any)</td>
+    					<td>50 p/ SMS (24hr)</td>
+    				</tr>
+    				<tr>
+    					<td>No of FnF</td>
+    					<td>10 FnF (Any)</td>
+    				</tr>
+    				<tr>
+    					<td>FnF (Any)</td>
+    					<td>11.50 p/ 10 sec (24hr)</td>
+    				</tr>
+    				<tr>
+    					<td>Migrate</td>
+    					<td>'D' to 4444 <a class="btn btn-default btn-xs" data-message="D" data-number="4444">Activate</a></td>
+    				</tr>
+    			</tbody>
+    		</table>
+		
+    		<table class="table table-bordered table-condensed">
+    			<thead>
+    				<tr>
+    					<th colspan="2">Amontron</th>
+    				</tr>
+    			</thead>
+    			<tbody>
+    				<tr>
+    					<td class="header">GP to GP</td>
+    					<td>23.33 p/ 10 sec (24hr)</td>
+    				</tr>
+    				<tr>
+    					<td>GP to Any</td>
+    					<td>11.66 p/ 10 sec (24hr)</td>
+    				</tr>
+    				<tr>
+    					<td>SMS (Any)</td>
+    					<td>50 p/ SMS (24hr)</td>
+    				</tr>
+    				<tr>
+    					<td>No of FnF</td>
+    					<td>1 Super FnF (GP)</td>
+    				</tr>
+    				<tr>
+    					<td>FnF (Super)</td>
+    					<td>5.50 p/ 10 sec (24hr)</td>
+    				</tr>
+    				<tr>
+    					<td>Migrate</td>
+    					<td>'AM' to 4444 <a class="btn btn-default btn-xs" data-message="AM" data-number="4444">Activate</a></td>
+    				</tr>
+    			</tbody>
+    		</table>
+		
+    		<table class="table table-bordered table-condensed">
+    			<thead>
+    				<tr>
+    					<th colspan="2">Smile</th>
+    				</tr>
+    			</thead>
+    			<tbody>
+    				<tr>
+    					<td class="header">GP to Any</td>
+    					<td>28 p/ 10 sec (24hr)</td>
+    				</tr>
+    				<tr>
+    					<td>SMS (Any)</td>
+    					<td>50 p/ SMS (24hr)</td>
+    				</tr>
+    				<tr>
+    					<td>No of FnF</td>
+    					<td>3 FnF (GP)</td>
+    				</tr>
+    				<tr>
+    					<td>FnF (GP)</td>
+    					<td>11.50 p/ 10 sec (24hr)</td>
+    				</tr>
+    				<tr>
+    					<td>Migrate</td>
+    					<td>'SM' to 4444 <a class="btn btn-default btn-xs" data-message="SM" data-number="4444">Activate</a></td>
+    				</tr>
+    			</tbody>
+    		</table>
+		
+    		<table class="table table-bordered table-condensed">
+    			<thead>
+    				<tr>
+    					<th colspan="2">Shohoj</th>
+    				</tr>
+    			</thead>
+    			<tbody>
+    				<tr>
+    					<td class="header">GP to Any</td>
+    					<td>20 p/ 10 sec (24hr)</td>
+    				</tr>
+    				<tr>
+    					<td>SMS (Any)</td>
+    					<td>50 p/ SMS (24hr)</td>
+    				</tr>
+    				<tr>
+    					<td>No of FnF</td>
+    					<td>N/A</td>
+    				</tr>
+    				<tr>
+    					<td>Migrate</td>
+    					<td>'S' to 4444 <a class="btn btn-default btn-xs" data-message="S" data-number="4444">Activate</a></td>
+    				</tr>
+    			</tbody>
+    		</table>
+		
+    		<table class="table table-bordered table-condensed">
+    			<thead>
+    				<tr>
+    					<th colspan="2">Aapon</th>
+    				</tr>
+    			</thead>
+    			<tbody>
+    				<tr>
+    					<td class="header">GP to Any</td>
+    					<td>16.66 p/ 10 sec (24hr)</td>
+    				</tr>
+    				<tr>
+    					<td>SMS (Any)</td>
+    					<td>50 p/ SMS (24hr)</td>
+    				</tr>
+    				<tr>
+    					<td>No of FnF</td>
+    					<td>N/A</td>
+    				</tr>
+    				<tr>
+    					<td>Migrate</td>
+    					<td>'A' to 4444 <a class="btn btn-default btn-xs" data-message="A" data-number="4444">Activate</a></td>
+    				</tr>
+    			</tbody>
+    		</table>
+		
+    		<table class="table table-bordered table-condensed">
+    			<thead>
+    				<tr>
+    					<th colspan="2">Spondon</th>
+    				</tr>
+    			</thead>
+    			<tbody>
+    				<tr>
+    					<td class="header">GP to Any</td>
+    					<td>2.12 p/ sec (24hr)</td>
+    				</tr>
+    				<tr>
+    					<td>SMS (Any)</td>
+    					<td>50 p/ SMS (24hr)</td>
+    				</tr>
+    				<tr>
+    					<td>No of FnF</td>
+    					<td>N/A</td>
+    				</tr>
+    				<tr>
+    					<td>Migrate</td>
+    					<td>'SP' to 4444 <a class="btn btn-default btn-xs" data-message="SP" data-number="4444">Activate</a></td>
+    				</tr>
+    			</tbody>
+    		</table>
+		
+    		<table class="table table-bordered table-condensed">
+                <thead>
+                    <tr>
+                        <th colspan="2">Recharge Offer</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td colspan="2"><b>Recharge Tk. 29</b></td></tr>
+                    <tr>
+                        <td class="header">GP to Any</td>
+                        <td>1 p/ sec (24hr)</td>
+                    </tr>
+    				<tr>
+                        <td>Free MMS</td>
+                        <td>1</td>
+                    </tr>
+    				<tr>
+                        <td>Free Data</td>
+                        <td>29 MB</td>
+                    </tr>
+    				<tr>
+                        <td>Validity</td>
+                        <td>4 Days</td>
+                    </tr>
+				
+    				<tr><td colspan="2"><b>Recharge Tk. 39</b></td></tr>
+                    <tr>
+                        <td class="header">GP to Any</td>
+                        <td>1 p/ sec (24hr)</td>
+                    </tr>
+    				<tr>
+                        <td>Validity</td>
+                        <td>7 Days</td>
+                    </tr>
+				
+    				<tr><td colspan="2"><b>Recharge Tk. 79</b></td></tr>
+                    <tr>
+                        <td class="header">GP to Any</td>
+                        <td>1 p/ sec (24hr)</td>
+                    </tr>
+    				<tr>
+                        <td>Validity</td>
+                        <td>30 Days</td>
+                    </tr>
+    				<tr>
+                        <td colspan="2" class="text-center">To check validity, dial <a class="btn btn-default btn-xs free" data-ussd="*566*32#">*566*32#</a></td>
+                    </tr>
+    				<tr>
+                        <td colspan="2" class="text-center">To unsubscribe 'Stop RC' to <a class="btn btn-default btn-xs free" data-message="Stop RC" data-number="9999">9999</a></td>
+                    </tr>
+                </tbody>
+            </table>
+    	</div>
+    </div>
+
+    <script type="text/javascript">
+    	function getUSSDParameters(button) {
+
+    		var table = button.closest('table');
+    		var pkg = table.find('thead th').text();
+
+    		var message = 'Are you sure you want to change your package?';
+
+    		return { title: pkg, message: message };
+    	}
+    </script>
+</body>
+</html>

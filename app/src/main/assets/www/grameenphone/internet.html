@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>BD All SIM Manager</title>
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/app.css" rel="stylesheet">
+    <link rel="apple-touch-icon" href="../images/sims.png" />
+
+    <script src="../js/angular.min.js"></script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../js/jquery.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/app.js"></script>
+</head>
+<body class="grameenphone" ng-app="simApp">
+    ﻿<div class="container">
+    	<div class="row">
+    		<div class="well well-sm text-center">
+    			Check Internet Balance (Free) <a class="btn btn-default btn-xs" href="#" data-ussd="*566*10#">*566*10#</a>
+    		</div>
+
+    		<h4 class="text-center">Internet Pack Details</h4>
+
+    		<table class="table table-bordered table-condensed internet-package">
+    			<thead>
+    				<tr>
+    					<th data-field="volume">Volume</th>
+    					<th data-field="validity">Validity</th>
+    					<th data-field="charge">Price</th>
+    					<th>USSD</th>
+
+    				</tr>
+    			</thead>
+    			<tbody class="text-center">
+    				<tr>
+    					<td>4 MB</td>
+    					<td>1 d</td>
+    					<td>2</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*11#">*5000*11#</a></td>
+    				</tr>
+    				<tr>
+    					<td>35 MB</td>
+    					<td>7 d</td>
+    					<td>15</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*27#">*5000*27#</a></td>
+    				</tr>
+    				<tr>
+    					<td>60 MB</td>
+    					<td>2 d</td>
+    					<td>9</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*118#">*5000*118#</a></td>
+    				</tr>
+    				<tr>
+    					<td>75 MB</td>
+    					<td>7 d</td>
+    					<td>30</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*12#">*5000*12#</a></td>
+    				</tr>
+    				 <tr>
+    					<td>100 MB</td>
+    					<td>2 d</td>
+    					<td>15</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*110#">*5000*110#</a></td>
+    				</tr>
+    				<tr>
+    					<td>100 MB</td>
+    					<td>30 d</td>
+    					<td>45</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*28#">*5000*28#</a></td>
+    				</tr>
+    				<tr>
+    					<td>200 MB</td>
+    					<td>7 d</td>
+    					<td>65</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*29#">*5000*29#</a></td>
+    				</tr>
+    				<tr>
+    					<td>250 MB</td>
+    					<td>28 d</td>
+    					<td>99</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*13#">*5000*13#</a></td>
+    				</tr>
+    				<tr>
+    					<td>500 MB</td>
+    					<td>7 d</td>
+    					<td>79</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*115#">*5000*115#</a></td>
+    				</tr>
+    				<tr>
+    					<td>500 MB</td>
+    					<td>7 d</td>
+    					<td>99</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*108#">*5000*108#</a></td>
+    				</tr>
+    				<tr>
+    					<td>500 MB</td>
+    					<td>28 d</td>
+    					<td>175</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*30#">*5000*30#</a></td>
+    				</tr>
+    				 <tr>
+    					<td>1 GB</td>
+    					<td>14 d</td>
+    					<td>150</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*109#">*5000*109#</a></td>
+    				</tr>
+    				<tr>
+    					<td>1 GB</td>
+    					<td>28 d</td>
+    					<td>275</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*14#">*5000*14#</a></td>
+    				</tr>
+    				<tr>
+    					<td>2 GB</td>
+    					<td>28 d</td>
+    					<td>350</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*15#">*5000*15#</a></td>
+    				</tr>
+    				<tr>
+    					<td>2 GB
+    					   <a class="btn btn-default btn-xs pull-right" data-toggle="popover" title="Night Packs!" data-content="Night Heavy Browsing (12 am-10 am), FUP After 2 GB"  data-placement="top">
+    							<span class="glyphicon glyphicon-exclamation-sign"></span>
+    						</a>
+    					</td>
+    					<td>28 d</td>
+    					<td>250</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*17#">*5000*17#</a></td>
+    				</tr>
+    				<tr>
+    					<td>3 GB</td>
+    					<td>28 d</td>
+    					<td>700</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*16#">*5000*16#</a></td>
+    				</tr>
+    				<tr>
+    					<td>4 GB</td>
+    					<td>28 d</td>
+    					<td>500</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*31#">*5000*31#</a></td>
+    				</tr>
+    				<tr>
+    					<td>8 GB</td>
+    					<td>28 d</td>
+    					<td>950</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*18#">*5000*18#</a></td>
+    				</tr>
+    				<tr>
+    					<td>20 GB</td>
+    					<td>30 d</td>
+    					<td>2000</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*23#">*5000*23#</a></td>
+    				</tr>
+    			</tbody>
+    		</table>
+		
+    		<h4 class="text-center">Important Codes for All Packs</h4>
+
+    		<table class="table table-bordered table-condensed internet-package">
+    			<thead>
+    				<tr>
+    					<th>Particulars</th>
+    					<th>USSD</th>
+    				</tr>
+    			</thead>
+    			<tbody class="text-center">
+    				<tr>
+    					<td>Turn On Auto Renew</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*60*1#" data-confirm="Are you sure you want to Turn On Auto Renew?">*5000*60*1#</a></td>
+    				</tr>
+    				<tr>
+    					<td>Turn Off Auto Renew</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*60*2#" data-confirm="Are you sure you want to Turn Off Auto Renew?">*5000*60*2#</a></td>
+    				</tr>
+    				<tr>
+    					<td>Stop Internet Package</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*61#" data-confirm="Are you sure you want to Stop Internet Package?">*5000*61#</a></td>
+    				</tr>
+    				<tr>
+    					<td>Get Handset Settings</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*62#" data-confirm="Are you sure you want to Get Handset Settings?">*5000*62#</a></td>
+    				</tr>
+    			</tbody>
+    		</table>
+    	</div>
+    </div>
+
+    <script type="text/javascript">
+    	function getUSSDParameters(button) {
+    		var tr = button.closest('tr');
+
+    		var tk = tr.find('td:eq(2)').text();
+    		var volume = tr.find('td:eq(0)').text();
+    		var validity = tr.find('td:eq(1)').text();
+
+    		var message = 'Warning: It will cost you BDT ' + tk + '. Are you sure you want to continue?';
+    		var title = volume + ' Pack (' + validity + ')';
+    		return { message: message, title: title };
+    	}
+    </script>
+
+	<div class="container">
+		<div class="row">
+			<div class="well well-sm text-center">
+				Check Volume (Free) <a class="btn btn-default btn-xs" href="#" data-ussd="*567#">*567#</a>
+			</div>
+			<h4 class="text-center">Facebook Packs</h4>
+			<table class="table table-bordered table-condensed bundle-offer">
+				<thead>
+				<tr>
+					<th data-field="pack">Volume</th>
+					<th data-field="charge">Cost</th>
+					<th data-field="validity">Validity</th>
+					<th>USSD</th>
+				</tr>
+				</thead>
+				<tbody class="text-center">
+				<tr>
+					<td>20 MB (FUP)</td>
+					<td>1</td>
+					<td>1 d</td>
+					<td><a class="btn btn-default btn-xs" data-ussd="*5000*19#">*5000*19#</a></td>
+				</tr>
+				<tr>
+					<td>40 MB (FUP)</td>
+					<td>5</td>
+					<td>7 d</td>
+					<td><a class="btn btn-default btn-xs" data-ussd="*5000*20#">*5000*20#</a></td>
+				</tr>
+				<tr>
+					<td>60 MB (FUP)</td>
+					<td>9</td>
+					<td>14 d</td>
+					<td><a class="btn btn-default btn-xs" data-ussd="*5000*21#">*5000*21#</a></td>
+				</tr>
+				<tr>
+					<td>100 MB (FUP)</td>
+					<td>15</td>
+					<td>28 d</td>
+					<td><a class="btn btn-default btn-xs" data-ussd="*5000*22#">*5000*22#</a></td>
+				</tr>
+				</tbody>
+			</table>
+
+			<h4 class="text-center">Free Facebook</h4>
+			<table class="table table-bordered table-condensed bundle-offer">
+				<thead>
+				<tr>
+					<th>Click<a class="btn btn-default btn-xs" href="http://0.facebook.com">0.facebook.com</a></th>
+				</tr>
+				</thead>
+				<tbody class="text-center">
+				<tr>
+					<td>Data Charges Applicable only: <br>1. If you connect any other link/site. <br>2. If you open any picture or images in the page. </td>
+				</tr>
+				</tbody>
+			</table>
+
+			<h4 class="text-center">Other Social Packs<br />(FB/WhatsApp/Comoyo)</h4>
+			<table class="table table-bordered table-condensed bundle-offer">
+				<thead>
+				<tr>
+					<th data-field="volume">Volume</th>
+					<th data-field="charge">Cost</th>
+					<th data-field="validity">Validity</th>
+					<th>USSD</th>
+				</tr>
+				</thead>
+				<tbody class="text-center">
+				<tr>
+					<td>20 MB (FUP)</td>
+					<td>1</td>
+					<td>1 d</td>
+					<td><a class="btn btn-default btn-xs" data-ussd="*5000*301#">*5000*301#</a></td>
+				</tr>
+				<tr>
+					<td>60 MB (FUP)</td>
+					<td>9</td>
+					<td>7 d</td>
+					<td><a class="btn btn-default btn-xs" data-ussd="*5000*302#">*5000*302#</a></td>
+				</tr>
+				<tr>
+					<td>100 MB (FUP)</td>
+					<td>3</td>
+					<td>1 d</td>
+					<td><a class="btn btn-default btn-xs" data-ussd="*5000*8*1*2#">*5000*8*1*2#</a></td>
+				</tr>
+				<tr>
+					<td>600 MB (FUP)</td>
+					<td>9</td>
+					<td>7 d</td>
+					<td><a class="btn btn-default btn-xs" data-ussd="*5000*8*1*1#">*5000*8*1*1#</a></td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<script type="text/javascript">
+    	function getUSSDParameters(button) {
+    		var tr = button.closest('tr');
+
+    		var tk = tr.find('td:eq(2)').text();
+    		var volume = tr.find('td:eq(0)').text();
+    		var validity = tr.find('td:eq(1)').text();
+
+    		var message = 'Warning: It will cost you BDT ' + tk + '. Are you sure you want to continue?';
+    		var title = volume + ' Pack (' + validity + ')';
+    		return { message: message, title: title };
+    	}
+    </script>
+</body>
+</html>

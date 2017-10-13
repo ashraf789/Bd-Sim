@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>BD All SIM Manager</title>
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/app.css" rel="stylesheet">
+    <link rel="apple-touch-icon" href="../images/sims.png" />
+
+    <script src="../js/angular.min.js"></script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../js/jquery.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/app.js"></script>
+</head>
+<body class="robi" ng-app="simApp">
+    ﻿<div class="container">
+        <div class="row">
+            <h4 class="text-center">Mini Bundle</h4>
+            <table class="table table-bordered table-condensed bundle-offer">
+                <thead>
+                    <tr>
+                        <th colspan="3" data-field="offer">Bundle Offer</th>
+                        <th rowspan="2">USSD</th>
+                    </tr>
+                    <tr>
+                        <th data-field="charge">Charge</th>
+                        <th>Time</th>
+                        <th data-field="validity">Validity</th>
+                    </tr>
+                </thead>
+                <tbody class="text-center">
+                    <tr>
+                        <td colspan="3" class="offer">8 min (Robi), 8 SMS</td>
+                        <td rowspan="2"><a href="#" class="btn btn-default btn-xs" data-ussd="*8666*002#">*8666*002#</a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>24 hrs</td>
+                        <td>6 hrs</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="offer">20 min (Robi), 20 SMS</td>
+                        <td rowspan="2"><a href="#" class="btn btn-default btn-xs" data-ussd="*8666*055#">*8666*055#</a></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>24 hrs</td>
+                        <td>8 hrs</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="offer">40 min (Robi), 40 SMS</td>
+                        <td rowspan="2"><a href="#" class="btn btn-default btn-xs" data-ussd="*8666*1010#">*8666*1010#</a></td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>24 hrs</td>
+                        <td>12 hrs</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            Purchased items query code:<br />
+                            Min <a href="#" class="btn btn-default btn-xs free" data-ussd="*222*2#">*222*2#</a>
+                            SMS <a href="#" class="btn btn-default btn-xs free" data-ussd="*222*12#">*222*12#</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h4 class="text-center">Daily Bundle</h4>
+            <table class="table table-bordered table-condensed bundle-offer">
+                <thead>
+                    <tr>
+                        <th colspan="3" data-field="offer">Bundle Offer</th>
+                        <th rowspan="2">USSD</th>
+                    </tr>
+                    <tr>
+                        <th data-field="charge">Charge</th>
+                        <th>Time</th>
+                        <th data-field="validity">Validity</th>
+                    </tr>
+                </thead>
+                <tbody class="text-center">
+                    <tr>
+                        <td colspan="3" class="offer">40 min (Robi) and 40 SMS</td>
+                        <td rowspan="2"><a href="#" class="btn btn-default btn-xs" data-ussd="*8666*02#">*8666*02#</a></td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>12 am - 5 pm</td>
+                        <td>24 hrs</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="offer">20 min (Robi) and 20 SMS</td>
+                        <td rowspan="2"><a href="#" class="btn btn-default btn-xs" data-ussd="*8666*03#">*8666*03#</a></td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>24 hrs</td>
+                        <td>1 day</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="offer">12 min (All), 12 MB data, 12 SMS</td>
+                        <td rowspan="2"><a href="#" class="btn btn-default btn-xs" data-ussd="*8666*12#">*8666*12#</a></td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>24 hrs</td>
+                        <td>1 day</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="offer">16 min (Any), 16 SMS</td>
+                        <td rowspan="2"><a href="#" class="btn btn-default btn-xs" data-ussd="*8666*016#">*8666*016#</a></td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>12 am - 5 pm</td>
+                        <td>24 hrs</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="offer">100 MB , 50 Min (30 Min Robi + 20 min Any), <br />20 SMS + 100 MB for FB & Whatsapp</td>
+                        <td rowspan="2"><a href="#" class="btn btn-default btn-xs" data-ussd="*8666*20#">*8666*20#</a></td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>24 hrs</td>
+                        <td>24 hrs</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            Purchased items query code:
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            Robi Min <a href="#" class="btn btn-default btn-xs free" data-ussd="*222*2#">*222*2#</a>
+                            Any Min <a href="#" class="btn btn-default btn-xs free" data-ussd="*222*8#">*222*8#</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            SMS <a href="#" class="btn btn-default btn-xs free" data-ussd="*222*12#">*222*12#</a>
+                            Internet <a href="#" class="btn btn-default btn-xs free" data-ussd="*8444*88#">*8444*88#</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h4 class="text-center">Weekly Bundle</h4>
+            <table class="table table-bordered table-condensed bundle-offer">
+                <thead>
+                    <tr>
+                        <th colspan="3" data-field="offer">Bundle Offer</th>
+                        <th rowspan="2">USSD</th>
+                    </tr>
+                    <tr>
+                        <th data-field="charge">Charge</th>
+                        <th>Time</th>
+                        <th data-field="validity">Validity</th>
+                    </tr>
+                </thead>
+                <tbody class="text-center">
+                    <tr>
+                        <td colspan="3" class="offer">150 min (Robi) and 150 SMS</td>
+                        <td rowspan="2"><a href="#" class="btn btn-default btn-xs" data-ussd="*8666*50#">*8666*50#</a></td>
+                    </tr>
+                    <tr>
+                        <td>50</td>
+                        <td>24 hrs</td>
+                        <td>7 days</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="offer">350 min (Robi)</td>
+                        <td rowspan="2"><a href="#" class="btn btn-default btn-xs" data-ussd="*8666*008#">*8666*008#</a></td>
+                    </tr>
+                    <tr>
+                        <td>100</td>
+                        <td>24 hrs</td>
+                        <td>7 days</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="offer">70 min (Any), 26 MB data, 25 SMS, 25 MMS</td>
+                        <td rowspan="2"><a href="#" class="btn btn-default btn-xs" data-ussd="*8666*025#">*8666*025#</a></td>
+                    </tr>
+                    <tr>
+                        <td>50</td>
+                        <td>24 hrs</td>
+                        <td>7 days</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="offer">150 min (Any), 51 MB data, 50 SMS, 50 MMS</td>
+                        <td rowspan="2"><a href="#" class="btn btn-default btn-xs" data-ussd="*8666*050#">*8666*050#</a></td>
+                    </tr>
+                    <tr>
+                        <td>100</td>
+                        <td>24 hrs</td>
+                        <td>7 days</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            Purchased items query code:
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            Robi Min <a href="#" class="btn btn-default btn-xs free" data-ussd="*222*2#">*222*2#</a>
+                            Any Min <a href="#" class="btn btn-default btn-xs free" data-ussd="*222*8#">*222*8#</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            SMS <a href="#" class="btn btn-default btn-xs free" data-ussd="*222*12#">*222*12#</a>
+                            Internet <a href="#" class="btn btn-default btn-xs free" data-ussd="*8444*88#">*8444*88#</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h4 class="text-center">Monthly Bundle</h4>
+            <table class="table table-bordered table-condensed bundle-offer">
+                <thead>
+                    <tr>
+                        <th colspan="3" data-field="offer">Bundle Offer</th>
+                        <th rowspan="2">USSD</th>
+                    </tr>
+                    <tr>
+                        <th data-field="charge">Charge</th>
+                        <th>Time</th>
+                        <th data-field="validity">Validity</th>
+                    </tr>
+                </thead>
+                <tbody class="text-center">
+                    <tr>
+                        <td colspan="3" class="offer">500 min (Any), 200 MB data, 200 SMS</td>
+                        <td rowspan="2"><a href="#" class="btn btn-default btn-xs" data-ussd="*8666*500#">*8666*500#</a></td>
+                    </tr>
+                    <tr>
+                        <td>300</td>
+                        <td>24 hrs</td>
+                        <td>30 days</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="offer">1 GB + 200 min (Robi), <br />199 min (Any) + 399 SMS</td>
+                        <td rowspan="2"><a href="#" class="btn btn-default btn-xs" data-ussd="*8666*79#">*8666*79#</a></td>
+                    </tr>
+                    <tr>
+                        <td>449</td>
+                        <td>24 hrs</td>
+                        <td>30 days</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="offer">Unlimited 16 GB + 300 min (Robi), <br />300 min (Any) + 600 SMS</td>
+                        <td rowspan="2"><a href="#" class="btn btn-default btn-xs" data-ussd="*8666*80#">*8666*80#</a></td>
+                    </tr>
+                    <tr>
+                        <td>649</td>
+                        <td>24 hrs</td>
+                        <td>30 days</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            Purchased items query code:
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            Robi Min <a href="#" class="btn btn-default btn-xs free" data-ussd="*222*2#">*222*2#</a>
+                            Any Min <a href="#" class="btn btn-default btn-xs free" data-ussd="*222*8#">*222*8#</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            SMS <a href="#" class="btn btn-default btn-xs free" data-ussd="*222*12#">*222*12#</a>
+                            Internet <a href="#" class="btn btn-default btn-xs free" data-ussd="*8444*88#">*8444*88#</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h4 class="text-center">650% Mega Bonus Offer!</h4>
+            <table class="table table-bordered table-condensed bundle-offer">
+                <thead>
+                    <tr>
+                        <th colspan="3" data-field="offer">Bundle Offer</th>
+                        <th rowspan="2">USSD</th>
+                    </tr>
+                    <tr>
+                        <th data-field="charge">Charge</th>
+                        <th>Time</th>
+                        <th data-field="validity">Validity</th>
+                    </tr>
+                </thead>
+                <tbody class="text-center">
+                    <tr>
+                        <td colspan="3" class="offer">8 Min (4 min Robi & 4 min Any), <br />8 MB , 8 SMS (local), 8 MMS</td>
+                        <td rowspan="2"><a href="#" class="btn btn-default btn-xs" data-ussd="*8666*8#">*8666*8#</a></td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>24 hrs</td>
+                        <td>1 day</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="offer">15 Min (8 min Robi & 7 min Any), <br />15 MB , 15 SMS (local), 15 MMS</td>
+                        <td rowspan="2"><a href="#" class="btn btn-default btn-xs" data-ussd="*8666*15#">*8666*15#</a></td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>24 hrs</td>
+                        <td>1 day</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="offer">110 Min (55 min Robi & 55 min Any), <br />110 MB , 110 SMS (local), 110 MMS</td>
+                        <td rowspan="2"><a href="#" class="btn btn-default btn-xs" data-ussd="*8666*100#">*8666*100#</a></td>
+                    </tr>
+                    <tr>
+                        <td>100</td>
+                        <td>24 hrs</td>
+                        <td>7 days</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="offer"> 170 Min (85 min Robi & 85 min Any) <br />170 MB, 170 SMS (local), 170 MMS</td>
+                        <td rowspan="2"><a href="#" class="btn btn-default btn-xs" data-ussd="*8666*150#">*8666*150#</a></td>
+                    </tr>
+                    <tr>
+                        <td>150</td>
+                        <td>24 hrs</td>
+                        <td>15 days</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="offer">350 Min (175 min Robi & 175 min Any), <br />350 MB , 350 SMS (local), 350 MMS</td>
+                        <td rowspan="2"><a href="#" class="btn btn-default btn-xs" data-ussd="*8666*300#">*8666*300#</a></td>
+                    </tr>
+                    <tr>
+                        <td>300</td>
+                        <td>24 hrs</td>
+                        <td>30 days</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            Purchased items query code:
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            Robi Min <a href="#" class="btn btn-default btn-xs free" data-ussd="*222*2#">*222*2#</a>
+                            Any Min <a href="#" class="btn btn-default btn-xs free" data-ussd="*222*9#">*222*9#</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            SMS <a href="#" class="btn btn-default btn-xs free" data-ussd="*222*12#">*222*12#</a>
+                            MMS <a href="#" class="btn btn-default btn-xs free" data-ussd="*222*13#">*222*13#</a>
+                            Internet <a href="#" class="btn btn-default btn-xs free" data-ussd="*8444*88#">*8444*88#</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h4 class="text-center">Other Bundle</h4>
+            <table class="table table-bordered table-condensed bundle-offer">
+                <thead>
+                    <tr>
+                        <th colspan="3" data-field="offer">Bundle Offer</th>
+                        <th rowspan="2">USSD</th>
+                    </tr>
+                    <tr>
+                        <th data-field="charge">Charge</th>
+                        <th>Time</th>
+                        <th data-field="validity">Validity</th>
+                    </tr>
+                </thead>
+                <tbody class="text-center">
+                    <tr>
+                        <td colspan="3" class="offer">75 MB + 15 min (Robi) + 14 min (Any) + 29 SMS</td>
+                        <td rowspan="2"><a href="#" class="btn btn-default btn-xs" data-ussd="*8666*76#">*8666*76#</a></td>
+                    </tr>
+                    <tr>
+                        <td>24</td>
+                        <td>24 hrs</td>
+                        <td>3 days</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="offer">199 MB + 50 min (Robi) + 49 min (Any) + 99 SMS</td>
+                        <td rowspan="2"><a href="#" class="btn btn-default btn-xs" data-ussd="*8666*78#">*8666*78#</a></td>
+                    </tr>
+                    <tr>
+                        <td>99</td>
+                        <td>24 hrs</td>
+                        <td>15 days</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            Purchased items query code:
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            Robi Min <a href="#" class="btn btn-default btn-xs free" data-ussd="*222*2#">*222*2#</a>
+                            Any Min <a href="#" class="btn btn-default btn-xs free" data-ussd="*222*8#">*222*8#</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            SMS <a href="#" class="btn btn-default btn-xs free" data-ussd="*222*12#">*222*12#</a>
+                            Internet <a href="#" class="btn btn-default btn-xs free" data-ussd="*8444*88#">*8444*88#</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h4 class="text-center">Old Bundle Offer</h4>
+            <table class="table table-bordered table-condensed bundle-offer">
+                <thead>
+                    <tr>
+                        <th colspan="3" data-field="offer">Bundle Offer</th>
+                        <th rowspan="2">USSD</th>
+                    </tr>
+                    <tr>
+                        <th data-field="charge">Charge</th>
+                        <th>Time</th>
+                        <th data-field="validity">Validity</th>
+                    </tr>
+                </thead>
+                <tbody class="text-center">
+                    <tr>
+                        <td colspan="3" class="offer">20 min (Robi), 100 SMS (local), <br />20 MB, 5 MMS (local) </td>
+                        <td rowspan="2"><a href="#" class="btn btn-default btn-xs" data-ussd="*8666*38#">*8666*38#</a></td>
+                    </tr>
+                    <tr>
+                        <td>38</td>
+                        <td>24 hrs</td>
+                        <td>7 days</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="offer">15 min (Robi), 20 MB, 5 MMS (local)</td>
+                        <td rowspan="2"><a href="#" class="btn btn-default btn-xs" data-ussd="*8666*27#">*8666*27#</a></td>
+                    </tr>
+                    <tr>
+                        <td>27</td>
+                        <td>24 hrs</td>
+                        <td>7 days</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="offer">15 min (Robi), 100 SMS (local), 5 MMS (local) </td>
+                        <td rowspan="2"><a href="#" class="btn btn-default btn-xs" data-ussd="*8666*26#">*8666*26#</a></td>
+                    </tr>
+                    <tr>
+                        <td>26</td>
+                        <td>24 hrs</td>
+                        <td>7 days</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            Purchased items query code:
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            Robi Min <a href="#" class="btn btn-default btn-xs free" data-ussd="*222*3#">*222*3#</a>
+                            MMS <a href="#" class="btn btn-default btn-xs free" data-ussd="*222*13#">*222*13#</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            SMS <a href="#" class="btn btn-default btn-xs free" data-ussd="*222*12#">*222*12#</a>
+                            Internet <a href="#" class="btn btn-default btn-xs free" data-ussd="*222*81#">*222*81#</a>
+                        </td>
+                    </tr>
+    			</tbody>
+    		</table>
+		
+    		<h4 class="text-center">Internet Plus Offer</h4>
+            <table class="table table-bordered table-condensed bundle-offer">
+                <thead>
+                    <tr>
+                        <th colspan="3" data-field="offer">Bundle Offer</th>
+                        <th rowspan="2">USSD</th>
+                    </tr>
+                    <tr>
+                        <th data-field="charge">Charge</th>
+                        <th>Time</th>
+                        <th data-field="validity">Validity</th>
+                    </tr>
+                </thead>
+                <tbody class="text-center">
+                    <tr>
+                        <td colspan="3" class="offer">10 min + 100 SMS (Any), 45 MB</td>
+                        <td rowspan="2"><a href="#" class="btn btn-default btn-xs" data-ussd="*140*25*1#">*140*25*1#</a></td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>24 hrs</td>
+                        <td>1 d</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="offer">70 min + 700 SMS (Any), 200 MB</td>
+                        <td rowspan="2"><a href="#" class="btn btn-default btn-xs" data-ussd="*140*25*2#">*140*25*2#</a></td>
+                    </tr>
+                    <tr>
+                        <td>74</td>
+                        <td>24 hrs</td>
+                        <td>7 d</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="offer">280 min + 2800 SMS (Any), 750 MB </td>
+                        <td rowspan="2"><a href="#" class="btn btn-default btn-xs" data-ussd="*140*25*3#">*140*25*3#</a></td>
+                    </tr>
+                    <tr>
+                        <td>234</td>
+                        <td>24 hrs</td>
+                        <td>28 day</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            Purchased items query code:
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            Stop Auto Renew <a href="#" class="btn btn-default btn-xs free" data-ussd="*140*25#">*140*25#</a>
+                            Any Min <a href="#" class="btn btn-default btn-xs free" data-ussd="*222*8#">*222*8#</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            SMS <a href="#" class="btn btn-default btn-xs free" data-ussd="*222*12#">*222*12#</a>
+                            Internet <a href="#" class="btn btn-default btn-xs free" data-ussd="*8444*88#">*8444*88#</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <h4 class="text-center">SMS Bundle</h4>
+            <table class="table table-bordered table-condensed bundle-offer">
+                <thead>
+                <tr>
+                    <th rowspan="2">Bundle</th>
+                    <th colspan="3" data-field="offer">Offer</th>
+                </tr>
+                <tr>
+                    <th data-field="charge">Charge</th>
+                    <th data-field="validity">Validity</th>
+                    <th>USSD</th>
+                </tr>
+                </thead>
+                <tbody class="text-center">
+                <tr>
+                    <td rowspan="2">MINI SMS PACK</td>
+                    <td colspan="3" class="offer">10 SMS (Robi)</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1 hour</td>
+                    <td colspan="2">
+                        <a class="btn btn-default btn-xs" data-ussd="*8666*1#">*8666*1#</a>
+                    </td>
+                <tr>
+                    <td rowspan="2">Daily Pack</td>
+                    <td colspan="3" class="offer">20 SMS (Robi) + 20 (Any)</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>1 d</td>
+                    <td colspan="2">
+                        <a class="btn btn-default btn-xs" data-ussd="*8666*40#">*8666*40#</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Daily Pack</td>
+                    <td colspan="3" class="offer">100 SMS (Any)</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>1 d</td>
+                    <td colspan="2">
+                        <a class="btn btn-default btn-xs" data-ussd="*8666*1000#">*8666*1000#</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="2">2 Days Pack</td>
+                    <td colspan="3" class="offer">100 SMS (Robi)</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>2 d</td>
+                    <td colspan="2">
+                        <a class="btn btn-default btn-xs" data-ussd="*8666*5555#">*8666*5555#</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="2">NIGHT BIRD</td>
+                    <td colspan="3" class="offer">1000 SMS (Robi) 12 am-6 am</td>
+                </tr>
+                <tr>
+                    <td>25</td>
+                    <td>30 d</td>
+                    <td colspan="2">
+                        <a class="btn btn-default btn-xs" data-ussd="*8666*25#">*8666*25#</a>
+                    </td>
+                <tr>
+                    <td colspan="4">
+                        To check SMS, dial <a href="#" class="btn btn-default btn-xs free" data-ussd="*222*12#">*222*12#</a>
+                    </td>
+                </tr>
+                <tr>
+                </tbody>
+            </table>
+
+            <h4 class="text-center">Voice Bundle</h4>
+            <table class="table table-bordered table-condensed bundle-offer">
+                <thead>
+                <tr>
+                    <th rowspan="2">Bundle</th>
+                    <th colspan="3">Offer</th>
+                </tr>
+                <tr>
+                    <th>Charge</th>
+                    <th>Validity</th>
+                    <th>USSD</th>
+                </tr>
+                </thead>
+                <tbody class="text-center">
+                <tr>
+                    <td colspan="5">
+                        Robi doesn't offer any voice bundle.<br />
+                        Tap <a class="btn btn-default btn-xs" href="bundle-offers.html">here</a> to see bundle offers.
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

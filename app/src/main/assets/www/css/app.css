@@ -1,0 +1,174 @@
+body {
+    font-size: 12px;
+}
+
+/* Circle button */
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+}
+.btn-circle.btn-lg {
+  width: 50px;
+  height: 50px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 25px;
+}
+.btn-circle.btn-xl {
+  width: 70px;
+  height: 70px;
+  padding: 10px 16px;
+  font-size: 24px;
+  line-height: 1.33;
+  border-radius: 35px;
+}
+
+/* bootstrap customization */
+.col-xs-3 {
+    padding: 10px;
+}
+
+.col-xs-4 {
+    padding: 15px;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.important-ussd .ussd {
+    text-align: center;
+    width: 90px;
+}
+
+.important-ussd .ussd a {
+    width: 100%;
+}
+
+.robi th {
+	background: #ed1b24;
+	color: #fff;
+	text-align: center;
+}
+
+.robi .btn-default, .robi .btn-default:active:hover, .robi .btn-default[disabled] {
+    background: #ed1b24;
+    border: 1px solid #b2151b;
+	color: #fff;
+}
+
+.robi tr td.header {
+    width: 110px;
+    vertical-align: middle;
+}
+
+.robi .internet-package .btn-xs {
+    width: 100px;
+}
+
+.robi .panel-primary {
+    border-color: #b2151b;
+}
+
+.airtel .panel-primary {
+    border-color: #EE3338;
+}
+
+.grameenphone .panel-primary {
+    border-color: #0091d2;
+}
+
+.banglalink .panel-primary {
+    border-color: #DB5C1E;
+}
+
+.teletalk .panel-primary {
+    border-color: #0066CC;
+}
+
+.robi .panel-primary>.panel-heading {
+    background-color: #ed1b24;
+    border-color: #b2151b;
+}
+
+.airtel .panel-primary>.panel-heading {
+    background-color: #EE3338;
+    border-color: #EE3338;
+}
+
+.banglalink .panel-primary>.panel-heading {
+    background-color: #F16522;
+    border-color: #DB5C1E;
+}
+
+.grameenphone .panel-primary>.panel-heading {
+    background-color: #0091d2;
+    border-color: #0091d2;
+}
+
+.teletalk .panel-primary>.panel-heading {
+    background-color: #0066CC;
+    border-color: #0066CC;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    vertical-align: middle;
+}
+
+.robi td.offer {
+    text-align: left;
+}
+
+.banglalink th {
+    background: #F16522;
+    color: #fff;
+    text-align: center;
+}
+
+.banglalink .btn-default, .banglalink .btn-default:active:hover, .banglalink .btn-default[disabled] {
+    background: #F16522;
+    border: 1px solid #DB5C1E;
+	color: #fff;
+}
+
+.grameenphone th {
+    background: #0091d2;
+    color: #fff;
+    text-align: center;
+}
+
+.grameenphone .btn-default, .grameenphone .btn-default:active:hover, .grameenphone .btn-default[disabled] {
+    background: #0091d2;
+    border: 1px solid #0091d2;
+	color: #fff;
+}
+
+.airtel th {
+    background: #EE3338;
+    color: #fff;
+    text-align: center;
+}
+
+.airtel .btn-default, .airtel .btn-default:active:hover, .airtel .btn-default[disabled] {
+    background: #EE3338;
+    border: 1px solid #EE3338;
+	color: #fff;
+}
+
+.teletalk th {
+    background: #0066CC;
+    color: #fff;
+    text-align: center;
+}
+
+.teletalk .btn-default, .teletalk .btn-default:active:hover, .teletalk .btn-default[disabled] {
+    background: #0066CC;
+    border: 1px solid #0066CC;
+	color: #fff;
+}

@@ -1,0 +1,249 @@
+{
+  "title": "BD All SIM Manager",
+  "url": "index.html",
+  "items": [
+
+    {
+      "title": "Airtel",
+      "url": "airtel/index.html",
+      "items": [
+        {
+          "title": "Airtel",
+          "url": "airtel/voice-packages.html"
+        },
+        {
+          "title": "Airtel",
+          "url": "airtel/internet-packages.html"
+        },
+        {
+          "title": "Airtel",
+          "url": "airtel/facebook-packs.html"
+        },
+        {
+          "title": "Airtel",
+          "url": "airtel/bundle-offers.html"
+        },
+        {
+          "title": "Airtel",
+          "url": "airtel/voice-sms-bundle.html"
+        },
+        {
+          "title": "Airtel",
+          "url": "airtel/fnf.html"
+        },
+        {
+          "title": "Airtel",
+          "url": "airtel/important-ussd.html"
+        },
+        {
+          "title": "Airtel",
+          "url": "airtel/sms-inbox.html"
+        },
+        {
+          "title": "Airtel",
+          "url": "airtel/my-offer.html"
+        },
+        {
+          "title": "Airtel",
+          "url": "airtel/customer-care.html"
+        },
+		{
+          "title": "Airtel",
+          "url": "airtel/sim-registration.html"
+        }
+      ]
+    },
+    {
+      "title": "Banglalink",
+      "url": "banglalink/index.html",
+      "items": [
+        {
+          "title": "Banglalink",
+          "url": "banglalink/voice-packages.html"
+        },
+        {
+          "title": "Banglalink",
+          "url": "banglalink/internet-packages.html"
+        },
+        {
+          "title": "Banglalink",
+          "url": "banglalink/facebook-packs.html"
+        },
+        {
+          "title": "Banglalink",
+          "url": "banglalink/bundle-offers.html"
+        },
+        {
+          "title": "Banglalink",
+          "url": "banglalink/voice-sms-bundle.html"
+        },
+        {
+          "title": "Banglalink",
+          "url": "banglalink/fnf.html"
+        },
+        {
+          "title": "Banglalink",
+          "url": "banglalink/important-ussd.html"
+        },
+        {
+          "title": "Banglalink",
+          "url": "banglalink/sms-inbox.html"
+        },
+        {
+          "title": "Banglalink",
+          "url": "banglalink/my-offer.html"
+        },
+        {
+          "title": "Banglalink",
+          "url": "banglalink/customer-care.html"
+        },
+		{
+          "title": "Banglalink",
+          "url": "banglalink/sim-registration.html"
+        }
+      ]
+    },
+    {
+      "title": "Grameenphone",
+      "url": "grameenphone/index.html",
+      "items": [
+        {
+          "title": "Grameenphone",
+          "url": "grameenphone/voice-packages.html"
+        },
+        {
+          "title": "Grameenphone",
+          "url": "grameenphone/internet-packages.html"
+        },
+        {
+          "title": "Grameenphone",
+          "url": "grameenphone/facebook-packs.html"
+        },
+        {
+          "title": "Grameenphone",
+          "url": "grameenphone/bundle-offers.html"
+        },
+        {
+          "title": "Grameenphone",
+          "url": "grameenphone/voice-sms-bundle.html"
+        },
+        {
+          "title": "Grameenphone",
+          "url": "grameenphone/fnf.html"
+        },
+        {
+          "title": "Grameenphone",
+          "url": "grameenphone/important-ussd.html"
+        },
+        {
+          "title": "Grameenphone",
+          "url": "grameenphone/sms-inbox.html"
+        },
+        {
+          "title": "Grameenphone",
+          "url": "grameenphone/my-offer.html"
+        },
+        {
+          "title": "Grameenphone",
+          "url": "grameenphone/customer-care.html"
+        },
+		{
+          "title": "Grameenphone",
+          "url": "grameenphone/sim-registration.html"
+        }
+      ]
+    },
+    {
+      "title": "Robi",
+      "url": "robi/index.html",
+      "items": [
+        {
+          "title": "Robi",
+          "url": "robi/voice-packages.html"
+        },
+        {
+          "title": "Robi",
+          "url": "robi/internet-packages.html"
+        },
+        {
+          "title": "Robi",
+          "url": "robi/facebook-packs.html"
+        },
+        {
+          "title": "Robi",
+          "url": "robi/bundle-offers.html"
+        },
+        {
+          "title": "Robi",
+          "url": "robi/voice-sms-bundle.html"
+        },
+        {
+          "title": "Robi",
+          "url": "robi/fnf.html"
+        },
+        {
+          "title": "Robi",
+          "url": "robi/important-ussd.html"
+        },
+        {
+          "title": "Robi",
+          "url": "robi/sms-inbox.html"
+        },
+        {
+          "title": "Robi",
+          "url": "robi/my-offer.html"
+        },
+        {
+          "title": "Robi",
+          "url": "robi/customer-care.html"
+        },
+		{
+          "title": "Robi",
+          "url": "robi/sim-registration.html"
+        }
+      ]
+    },
+    {
+      "title": "Teletalk",
+      "url": "teletalk/index.html",
+      "items": [
+        {
+          "title": "Teletalk",
+          "url": "teletalk/voice-packages.html"
+        },
+        {
+          "title": "Teletalk",
+          "url": "teletalk/internet-packages.html"
+        },
+        {
+          "title": "Teletalk",
+          "url": "teletalk/bundle-offers.html"
+        },
+        {
+          "title": "Teletalk",
+          "url": "teletalk/voice-sms-bundle.html"
+        },
+        {
+          "title": "Teletalk",
+          "url": "teletalk/fnf.html"
+        },
+        {
+          "title": "Teletalk",
+          "url": "teletalk/important-ussd.html"
+        },
+        {
+          "title": "Teletalk",
+          "url": "teletalk/sms-inbox.html"
+        },
+        {
+          "title": "Teletalk",
+          "url": "teletalk/customer-care.html"
+        },
+		{
+          "title": "Teletalk",
+          "url": "teletalk/sim-registration.html"
+        }
+      ]
+    }
+  ]
+}

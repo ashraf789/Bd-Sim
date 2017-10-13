@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Bd Sim.all</string>
+    <string name="gp_fnf_check">For Check Fnf : Type FF and Send Message to 2888 Or Press The Bellow Button</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_update">Update</string>
+    <string name="banner_ad_unit_id">ca-app-pub-2122789248840144/2531916117</string>
+
+</resources>

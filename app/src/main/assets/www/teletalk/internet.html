@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>BD All SIM Manager</title>
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/app.css" rel="stylesheet">
+    <link rel="apple-touch-icon" href="../images/sims.png" />
+
+    <script src="../js/angular.min.js"></script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../js/jquery.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/app.js"></script>
+</head>
+<body class="teletalk" ng-app="simApp">
+    ﻿<div class="container">
+    	<div class="row">
+    		<div class="well well-sm text-center">
+    			Check Internet Balance (Free) <a class="btn btn-default btn-xs" href="#" data-ussd="*152#">*152#</a> OR <a class="btn btn-default btn-xs" href="#" data-message="U" data-number="111">111</a>
+    		</div>
+		
+    		<h4 class="text-center">Bornomala Internet Packs</h4>
+
+    		<table class="table table-bordered table-condensed internet-package">
+    			<thead>
+    				<tr>
+    					<th>Speed</th>
+    					<th data-field="volume">Volume</th>
+    					<th data-field="validity">Validity</th>
+    					<th data-field="charge">Price</th>
+    					<th>Code</th>
+    				</tr>
+    			</thead>
+    			<tbody class="text-center">
+    				<tr>
+    					<td rowspan="4">512 kbps</td>
+    				</tr>
+    				<tr>
+    					<td>500 MB</td>
+    					<td>30 d</td>
+    					<td>70</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-number="111" data-message="D71">D71</a></td>
+    				</tr>
+    				<tr>
+    					<td>1 GB</td>
+    					<td>30 d</td>
+    					<td>130</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-number="111" data-message="D72">D72</a></td>
+    				</tr>
+    				<tr>
+    					<td>5 GB</td>
+    					<td>30 d</td>
+    					<td>400</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-number="111" data-message="D73">D73</a></td>
+    				</tr>
+    			</tbody>
+    		</table>
+		
+    		<h4 class="text-center">Agami Internet Packs</h4>
+
+    		<table class="table table-bordered table-condensed internet-package">
+    			<thead>
+    				<tr>
+    					<th>Speed</th>
+    					<th data-field="volume">Volume</th>
+    					<th data-field="validity">Validity</th>
+    					<th data-field="charge">Price</th>
+    					<th>Code</th>
+    				</tr>
+    			</thead>
+    			<tbody class="text-center">
+    				<tr>
+    					<td rowspan="4">512 kbps</td>
+    				</tr>
+    				<tr>
+    					<td>20 MB</td>
+    					<td>1 d</td>
+    					<td>6</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-number="111" data-message="D43">D43</a></td>
+    				</tr>
+    				<tr>
+    					<td>1 GB</td>
+    					<td>30 d</td>
+    					<td>100</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-number="111" data-message="D44">D44</a></td>
+    				</tr>
+    				<tr>
+    					<td>5 GB</td>
+    					<td>30 d</td>
+    					<td>350</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-number="111" data-message="D45">D45</a></td>
+    				</tr>
+    			</tbody>
+    		</table>
+
+    		<h4 class="text-center">Internet Pack Details</h4>
+
+    		<table class="table table-bordered table-condensed internet-package">
+    			<thead>
+    				<tr>
+    					<th>Speed</th>
+    					<th data-field="volume">Volume</th>
+    					<th data-field="validity">Validity</th>
+    					<th data-field="charge">Price</th>
+    					<th>Code</th>
+    				</tr>
+    			</thead>
+    			<tbody class="text-center">
+    				<tr>
+    					<td rowspan="8">256 kbps</td>
+    				</tr>
+    				<tr>
+    					<td>40 MB</td>
+    					<td>3 d</td>
+    					<td>15</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-number="111" data-message="D35">D35</a></td>
+    				</tr>
+    				<tr>
+    					<td>500 MB</td>
+    					<td>30 d</td>
+    					<td>120</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-number="111" data-message="D13">D13</a></td>
+    				</tr>
+    				<tr>
+    					<td>1 GB</td>
+    					<td>10 d</td>
+    					<td>150</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-number="111" data-message="D14">D14</a></td>
+    				</tr>
+    				<tr>
+    					<td>1 GB</td>
+    					<td>30 d</td>
+    					<td>200</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-number="111" data-message="D59">D59</a></td>
+    				</tr>
+    				<tr>
+    					<td>2 GB</td>
+    					<td>30 d</td>
+    					<td>300</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-number="111" data-message="D15">D15</a></td>
+    				</tr>
+    				<tr>
+    					<td>4 GB</td>
+    					<td>30 d</td>
+    					<td>450</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-number="111" data-message="D16">D16</a></td>
+    				</tr>
+    				<tr>
+    					<td>25 GB</td>
+    					<td>30 d</td>
+    					<td>1050</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-number="111" data-message="D17">D17</a></td>
+    				</tr>
+    				<tr>
+    					<td rowspan="18">512 kbps</td>
+    				</tr>
+    				<tr>
+    					<td>5 MB</td>
+    					<td>1 d</td>
+    					<td>2</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-number="111" data-message="D56">D56</a></td>
+    				</tr>
+    				<tr>
+    					<td>20 MB</td>
+    					<td>1 d</td>
+    					<td>8</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-number="111" data-message="D18">D18</a></td>
+    				</tr>
+    				<tr>
+    					<td>100 MB</td>
+    					<td>5 d</td>
+    					<td>50</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-number="111" data-message="D37">D37</a></td>
+    				</tr>
+    				 <tr>
+    					<td>500 MB</td>
+    					<td>30 d</td>
+    					<td>140</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-number="111" data-message="D80">D80</a></td>
+    				</tr>
+    				<tr>
+    					<td>1 GB</td>
+    					<td>3 d</td>
+    					<td>80</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-number="111" data-message="D58">D58</a></td>
+    				</tr>
+    				<tr>
+    					<td>1 GB</td>
+    					<td>10 d</td>
+    					<td>160</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-number="111" data-message="D19">D19</a></td>
+    				</tr>
+    				<tr>
+    					<td>1 GB
+    						<a class="btn btn-default btn-xs pull-right" data-toggle="popover" title="Off Peak Hour Packs!" data-content="6 pm-12 am"  data-placement="top">
+    							<span class="glyphicon glyphicon-exclamation-sign"></span>
+    						</a>
+    					</td>
+    					<td>30 d</td>
+    					<td>99</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-number="111" data-message="D60">D60</a></td>
+    				</tr>
+    				<tr>
+    					<td>1 GB</td>
+    					<td>30 d</td>
+    					<td>260</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-number="111" data-message="D31">D31</a></td>
+    				</tr>
+    				<tr>
+    					<td>2 GB</td>
+    					<td>30 d</td>
+    					<td>350</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-number="111" data-message="D20">D20</a></td>
+    				</tr>
+    				<tr>
+    					<td>3 GB</td>
+    					<td>30 d</td>
+    					<td>425</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-number="111" data-message="D38">D38</a></td>
+    				</tr>
+    				<tr>
+    					<td>3 GB</td>
+    					<td>6 M</td>
+    					<td>1000</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-number="111" data-message="D36">D36</a></td>
+    				</tr>
+    				<tr>
+    					<td>5 GB</td>
+    					<td>30 d</td>
+    					<td>600</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-number="111" data-message="D21">D21</a></td>
+    				</tr>
+    				 <tr>
+    					<td>5 GB
+    						<a class="btn btn-default btn-xs pull-right" data-toggle="popover" title="Off Peak Hour Packs!" data-content="6 pm-12 am"  data-placement="top">
+    							<span class="glyphicon glyphicon-exclamation-sign"></span>
+    						</a>
+    					</td>
+    					<td>30 d</td>
+    					<td>300</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-number="111" data-message="D63">D63</a></td>
+    				</tr>
+    				<tr>
+    					<td>10 GB</td>
+    					<td>30 d</td>
+    					<td>825</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-number="111" data-message="D22">D22</a></td>
+    				</tr>
+    				<tr>
+    					<td>10 GB
+    						<a class="btn btn-default btn-xs pull-right" data-toggle="popover" title="Off Peak Hour Packs!" data-content="6 pm-12 am"  data-placement="top">
+    							<span class="glyphicon glyphicon-exclamation-sign"></span>
+    						</a>
+    					</td>
+    					<td>30 d</td>
+    					<td>500</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-number="111" data-message="D64">D64</a></td>
+    				</tr>
+    				<tr>
+    					<td>30 GB</td>
+    					<td>30 d</td>
+    					<td>1500</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-number="111" data-message="D32">D32</a></td>
+    				</tr>
+    				<tr>
+    					<td>90 GB</td>
+    					<td>30 d</td>
+    					<td>4000</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-number="111" data-message="D61">D61</a></td>
+    				</tr>
+    				<tr>
+    					<td rowspan="12">1 mbps</td>
+    				</tr>
+    				<tr>
+    					<td>40 MB</td>
+    					<td>3 d</td>
+    					<td>20</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-number="111" data-message="D51">D51</a></td>
+    				</tr>
+    				<tr>
+    					<td>300 MB</td>
+    					<td>7 d</td>
+    					<td>100</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-number="111" data-message="D52">D52</a></td>
+    				</tr>
+    				<tr>
+    					<td>1 GB</td>
+    					<td>10 d</td>
+    					<td>260</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-number="111" data-message="D23">D23</a></td>
+    				</tr>
+    				 <tr>
+    					<td>1 GB</td>
+    					<td>30 d</td>
+    					<td>320</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-number="111" data-message="D53">D53</a></td>
+    				</tr>
+    				<tr>
+    					<td>2 GB</td>
+    					<td>30 d</td>
+    					<td>425</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-number="111" data-message="D24">D24</a></td>
+    				</tr>
+    				<tr>
+    					<td>4 GB</td>
+    					<td>30 d</td>
+    					<td>750</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-number="111" data-message="D25">D25</a></td>
+    				</tr>
+    				<tr>
+    					<td>6 GB</td>
+    					<td>30 d</td>
+    					<td>900</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-number="111" data-message="D57">D57</a></td>
+    				</tr>
+    				<tr>
+    					<td>8 GB</td>
+    					<td>30 d</td>
+    					<td>1000</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-number="111" data-message="D26">D26</a></td>
+    				</tr>
+    				<tr>
+    					<td>25 GB
+    						<a class="btn btn-default btn-xs pull-right" data-toggle="popover" title="Off Peak Hour Packs!" data-content="6 pm-12 am"  data-placement="top">
+    							<span class="glyphicon glyphicon-exclamation-sign"></span>
+    						</a>
+    					</td>
+    					<td>30 d</td>
+    					<td>1100</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-number="111" data-message="D65">D65</a></td>
+    				</tr>
+    				<tr>
+    					<td>30 GB</td>
+    					<td>30 d</td>
+    					<td>2500</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-number="111" data-message="D33">D33</a></td>
+    				</tr>
+    				<tr>
+    					<td>60 GB</td>
+    					<td>30 d</td>
+    					<td>4000</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-number="111" data-message="D62">D62</a></td>
+    				</tr>
+    				<tr>
+    					<td rowspan="5">2 mbps</td>
+    				</tr>
+    				<tr>
+    					<td>5 GB</td>
+    					<td>3 d</td>
+    					<td>1200</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-number="111" data-message="D54">D54</a></td>
+    				</tr>
+    				<tr>
+    					<td>7 GB</td>
+    					<td>30 d</td>
+    					<td>1600</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-number="111" data-message="D55">D55</a></td>
+    				</tr>
+    				<tr>
+    					<td>10 GB</td>
+    					<td>30 d</td>
+    					<td>2200</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-number="111" data-message="D27">D27</a></td>
+    				</tr>
+    				 <tr>
+    					<td>30 GB</td>
+    					<td>30 d</td>
+    					<td>5000</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-number="111" data-message="D28">D28</a></td>
+    				</tr>
+    				<tr>
+    					<td rowspan="3">4 mbps</td>
+    				</tr>
+    				<tr>
+    					<td>8 GB</td>
+    					<td>10 d</td>
+    					<td>3000</td>
+    					<td> N/A
+    				</tr>
+    				<tr>
+    					<td>20 GB</td>
+    					<td>10 d</td>
+    					<td>6500</td>
+    					<td> N/A
+    				</tr>
+    			</tbody>
+    		</table>
+    	</div>
+    </div>
+
+	<div class="container">
+		<div class="row">
+			<h4 class="text-center">FB Packs</h4>
+			<table class="table table-bordered table-condensed bundle-offer">
+				<thead>
+				<tr>
+					<th>Pack</th>
+					<th>Volume</th>
+					<th>Cost</th>
+					<th>Validity</th>
+					<th>USSD</th>
+				</tr>
+				</thead>
+				<tbody class="text-center">
+				<tr>
+					<td>All Facebook</td>
+					<td>40 MB</td>
+					<td>4</td>
+					<td>1 d</td>
+					<td><a class="btn btn-default btn-xs" data-ussd="*8444*04#">*8444*04#</a></td>
+				</tr>
+				<tr>
+					<td>0.facebook.com</td>
+					<td>500 MB</td>
+					<td>0</td>
+					<td>7 d</td>
+					<td><a class="btn btn-default btn-xs" data-ussd="*8444*0#">*8444*0#</a></td>
+				</tr>
+				</tbody>
+			</table>
+
+			<h4 class="text-center">Other Social Packs</h4>
+			<table class="table table-bordered table-condensed bundle-offer">
+				<thead>
+				<tr>
+					<th>Pack</th>
+					<th>Volume</th>
+					<th>Cost</th>
+					<th>Validity</th>
+					<th>USSD</th>
+				</tr>
+				</thead>
+				<tbody class="text-center">
+				<tr>
+					<td>WhatsApp</td>
+					<td>40 MB</td>
+					<td>4</td>
+					<td>1 d</td>
+					<td><a class="btn btn-default btn-xs" data-ussd="*8444*06#">*8444*06#</a></td>
+				</tr>
+				<tr>
+					<td>Opera Mini</td>
+					<td>40 MB</td>
+					<td>12</td>
+					<td>24 hr</td>
+					<td><a class="btn btn-default btn-xs" data-ussd="*8444*00012#">*8444*00012#</a></td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+    	function getUSSDParameters(button) {
+    		var tr = button.closest('tr');
+
+    		var tk = tr.find('td:eq(2)').text();
+    		var volume = tr.find('td:eq(0)').text();
+    		var validity = tr.find('td:eq(1)').text();
+
+    		var message = 'Warning: It will cost you BDT ' + tk + '. Are you sure you want to continue?';
+    		var title = volume + ' Pack (' + validity + ')';
+    		return { message: message, title: title };
+    	}
+    </script>
+</body>
+</html>

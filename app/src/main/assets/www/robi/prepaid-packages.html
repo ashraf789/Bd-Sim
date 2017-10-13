@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>BD All SIM Manager</title>
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/app.css" rel="stylesheet">
+    <link rel="apple-touch-icon" href="../images/sims.png" />
+
+    <script src="../js/angular.min.js"></script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../js/jquery.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/app.js"></script>
+</head>
+<body class="robi" ng-app="simApp">
+    ﻿<div class="container">
+        <div class="row">
+            <div class="well well-sm text-center">
+                Check Current Package (Free) <a class="btn btn-default btn-xs" href="#" data-ussd="*140*14#">*140*14#</a>
+            </div>
+            <div class="well well-sm text-align">
+    			Note:<br />
+    			1. Packages can be changed every day. <br />
+    			2. Each FnF & partner number can be changed after 15 days.
+    		</div>
+
+            <table class="table table-bordered table-condensed">
+                <thead>
+                    <tr>
+                        <th colspan="2">Unlimited FNF</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="header">Robi to Any</td>
+                        <td>2 p/sec (24 hr)</td>
+                    </tr>
+                    <tr>
+                        <td>No of FnF</td>
+                        <td>80 Any</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" class="header">FnF (Robi)</td>
+                        <td>1 p/sec (5 pm - 12 am)</td>
+                    </tr>
+                    <tr>
+                        <td>0.5 p/sec (12 am - 5 pm)</td>
+                    </tr>
+                    <tr>
+                        <td>FnF (Any)</td>
+                        <td>1 p/sec (24 hr)</td>
+                    </tr>
+                    <tr>
+                        <td>USSD</td>
+                        <td>*8999*90# <a class="btn btn-default btn-xs" data-ussd="*8999*90#">Activate</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="table table-bordered table-condensed">
+                <thead>
+                    <tr>
+                        <th colspan="2">Hoot Hut Chomok 32</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="header">Robi to Any</td>
+                        <td>20.83 p/10 sec (24hr)</td>
+                    </tr>
+                    <tr>
+                        <td>No of FnF</td>
+                        <td>3 Robi + 2 Any</td>
+                    </tr>
+                    <tr>
+                        <td>FnF (Robi)</td>
+                        <td>13p/10 sec flat</td>
+                    </tr>
+                    <tr>
+                        <td>FnF (Any)</td>
+                        <td>13p/10 sec flat</td>
+                    </tr>
+                    <tr>
+                        <td>USSD</td>
+                        <td>*8999*32# <a class="btn btn-default btn-xs" data-ussd="*8999*32#">Activate</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="table table-bordered table-condensed">
+                <thead>
+                    <tr>
+                        <th colspan="2">Robi Club 34</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2" class="header">Robi to Robi</td>
+                        <td>10 p/10 sec (12 am - 5 pm)</td>
+                    </tr>
+                    <tr>
+                        <td>21 p/10 sec (5 pm - 12 am)</td>
+                    </tr>
+                    <tr>
+                        <td>Robi to Any</td>
+                        <td>21 p/10 sec (24hr)</td>
+                    </tr>
+                    <tr>
+                        <td>No of FnF</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>USSD</td>
+                        <td>*8999*34# <a class="btn btn-default btn-xs" data-ussd="*8999*34#">Activate</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="table table-bordered table-condensed">
+                <thead>
+                    <tr>
+                        <th colspan="2">Goti 36</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="header">Robi to Any</td>
+                        <td>18 p/10 sec (24hr)</td>
+                    </tr>
+                    <tr>
+                        <td>No of FnF</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>USSD</td>
+                        <td>*8999*36# <a class="btn btn-default btn-xs" data-ussd="*8999*36#">Activate</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="table table-bordered table-condensed">
+                <thead>
+                    <tr>
+                        <th colspan="2">Nobanno 37</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2" class="header">Robi to Robi</td>
+                        <td>5 p/10 sec (10 pm - 8 am)</td>
+                    </tr>
+                    <tr>
+                        <td>17 p/10 sec (8 am - 10 pm)</td>
+                    </tr>
+                    <tr>
+                        <td>Robi to Any</td>
+                        <td>17 p/10 sec (24hr)</td>
+                    </tr>
+                    <tr>
+                        <td>No of FnF</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>USSD</td>
+                        <td>*8999*37# <a class="btn btn-default btn-xs" data-ussd="*8999*37#">Activate</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="table table-bordered table-condensed">
+                <thead>
+                    <tr>
+                        <th colspan="2">Shorol 39</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="header">Robi to Any</td>
+                        <td>20 p/10 sec (24hr)</td>
+                    </tr>
+                    <tr>
+                        <td>No of FnF</td>
+                        <td>1 Robi</td>
+                    </tr>
+                    <tr>
+                        <td>FnF (Robi)</td>
+                        <td>5 p/10 sec (24hr)</td>
+                    </tr>
+                    <tr>
+                        <td>USSD</td>
+                        <td>*8999*39# <a class="btn btn-default btn-xs" data-ussd="*8999*39#">Activate</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="table table-bordered table-condensed">
+                <thead>
+                    <tr>
+                        <th colspan="2">Uddokta & Easyload</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td colspan="2"><b>Super (10 sec) tariff plan</b></td></tr>
+                    <tr>
+                        <td class="header">Robi to Any</td>
+                        <td>13 p/10 sec (24hr)</td>
+                    </tr>
+                    <tr>
+                        <td>USSD</td>
+                        <td>*8999*21# <a class="btn btn-default btn-xs" data-ussd="*8999*21#">Activate</a></td>
+                    </tr>
+
+                    <tr><td colspan="2"><b>Regular (1 sec) tariff plan</b></td></tr>
+                    <tr>
+                        <td class="header">Robi to Any</td>
+                        <td>1.62 p/sec (24hr)</td>
+                    </tr>
+                    <tr>
+                        <td>USSD</td>
+                        <td>*8999*20# <a class="btn btn-default btn-xs" data-ussd="*8999*20#">Activate</a></td>
+                    </tr>
+                </tbody>
+            </table>
+		
+    		<table class="table table-bordered table-condensed">
+                <thead>
+                    <tr>
+                        <th colspan="2">Recharge Offer</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td colspan="2"><b>Recharge Tk. 39</b></td></tr>
+                    <tr>
+                        <td class="header">Robi to Any</td>
+                        <td>1 p/ sec (24hr)</td>
+                    </tr>
+    				<tr>
+                        <td>Validity</td>
+                        <td>7 Days</td>
+                    </tr>
+
+                    <tr><td colspan="2"><b>Recharge Tk. 79</b></td></tr>
+                    <tr>
+                        <td class="header">Robi to Any</td>
+                        <td>1 p/ sec (24hr)</td>
+                    </tr>
+                    <tr>
+                        <td>Facebook</td>
+                        <td>Unlimited (500 MB)</td>
+                    </tr>
+    				<tr>
+                        <td>Validity</td>
+                        <td>10 Days</td>
+                    </tr>
+    				<tr><td colspan="2"><b>Recharge Tk. 36</b></td></tr>
+                    <tr>
+                        <td class="header">Robi to Any</td>
+                        <td>10 p/10 sec (24hr)</td>
+                    </tr>
+    				<tr>
+    					<td class="header">Validity</td>
+    					<td>15 Days</td>
+    				</tr>
+    				<tr><td colspan="2"><b>Recharge Tk. 66</b></td></tr>
+                    <tr>
+                        <td class="header">Robi to Any</td>
+                        <td>10 p/10 sec (24hr)</td>
+                    </tr>
+    				<tr>
+    					<td class="header">Validity</td>
+    					<td>30 Days</td>
+    				</tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function getUSSDParameters(button) {
+
+            var table = button.closest('table');
+            var pkg = table.find('thead th').text();
+
+            var message = 'Are you sure you want to change your package?';
+
+            return { title: pkg, message: message };
+        }
+    </script>
+</body>
+</html>

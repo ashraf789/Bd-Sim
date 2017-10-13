@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>BD All SIM Manager</title>
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/app.css" rel="stylesheet">
+    <link rel="apple-touch-icon" href="../images/sims.png" />
+
+    <script src="../js/angular.min.js"></script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../js/jquery.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/app.js"></script>
+</head>
+<body class="teletalk" ng-app="simApp">
+    ﻿
+    <div class="container">
+    	<div class="row">
+    		<h4 class="text-center">Recharge Bundle Offer</h4>
+    		<table class="table table-bordered table-condensed bundle-offer">
+    			<thead>
+    				<tr>
+    					<th rowspan="2">Name</th>
+    					<th colspan="3">Bundle Offer</th>
+    				</tr>
+    				<tr>
+    					<th>Recharge</th>
+    					<th>Time</th>
+    					<th>Validity</th>
+    				</tr>
+    			</thead>
+    			<tbody class="text-center">
+    				<tr>
+    					<td rowspan="2">Combo Pioneer</td>
+    					<td colspan="3" class="offer">200 mins + 200 SMS (Any), 250 MB</td>
+    				</tr>
+    				<tr>
+    					<td>Tk. 152</td>
+    					<td>24 hrs</td>
+    					<td>15 d</td>
+    				</tr>
+    				<tr>
+    					<td rowspan="2">Combo Lighter</td>
+    					<td colspan="3" class="offer">300 mins + 400 SMS (Any), 500 MB</td>
+    				</tr>
+    				<tr>
+    					<td>Tk. 219</td>
+    					<td>24 hrs</td>
+    					<td>30 d</td>
+    				</tr>
+    				<tr>
+    					<td rowspan="2">Combo Standard</td>
+    					<td colspan="3" class="offer">500 mins + 500 SMS (Any), 1 GB</td>
+    				</tr>
+    				<tr>
+    					<td>Tk. 359</td>
+    					<td>24 hrs</td>
+    					<td>30 d</td>
+    				</tr>
+    				<tr>
+    					<td rowspan="2">Combo Gossip</td>
+    					<td colspan="3" class="offer">700 mins + 500 SMS (Any), 1 GB</td>
+    				</tr>
+    				<tr>
+    					<td>Tk. 504</td>
+    					<td>24 hrs</td>
+    					<td>30 d</td>
+    				</tr>
+    				<tr>
+    					<td rowspan="2">Combo Massive</td>
+    					<td colspan="3" class="offer">600 mins + 600 SMS (Any), 2 GB</td>
+    				</tr>
+    				<tr>
+    					<td>Tk. 519</td>
+    					<td>24 hrs</td>
+    					<td>30 d</td>
+    				</tr>
+    				<tr>
+    					<td colspan="4">To check volume, dial <a href="#" class="btn btn-default btn-xs free" data-ussd="*152#">*152#</a></td>
+    				</tr>
+    			</tbody>
+    		</table>
+    	</div>
+    </div>
+    <script>
+    	function getUSSDParameters(button) {
+    		var tr = button.closest('tr');
+    		var tk = tr.next().find('td:eq(0)').text();
+    		var offer = tr.find('td.offer').text();
+
+    		var message = 'Warning: It will cost you BDT ' + tk + '. Selected offer: ' + offer + '. Are you sure you want to continue?';
+    		return { title: 'Confirmation', message: message };
+    	}
+    </script>
+
+	<div class="container">
+		<div class="row">
+			<h4 class="text-center">SMS Bundle</h4>
+			<table class="table table-bordered table-condensed bundle-offer">
+				<thead>
+				<tr>
+					<th rowspan="2">Name</th>
+					<th colspan="3" data-field="offer">Offer</th>
+				</tr>
+				<tr>
+					<th data-field="charge">Charge</th>
+					<th data-field="validity">Validity</th>
+					<th>Send</th>
+				</tr>
+				</thead>
+				<tbody class="text-center">
+				<tr>
+					<td rowspan="2">Bundle-1</td>
+					<td colspan="3" class="offer">100 SMS (Tele - Tele)</td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>5 d</td>
+					<td colspan="2">
+						<a href="#" class="btn btn-default btn-xs" data-number="111" data-message="BS">111</a>
+					</td>
+				</tr>
+				<tr>
+					<td rowspan="2">Bundle-2</td>
+					<td colspan="3" class="offer">50 SMS (Tele - Tele) + 50 SMS (Tele - Any)</td>
+				</tr>
+				<tr>
+					<td>10</td>
+					<td>5 d</td>
+					<td colspan="2">
+						<a href="#" class="btn btn-default btn-xs" data-number="111" data-message="TS">111</a>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="4">
+						Check SMS, dial <a href="#" class="btn btn-default btn-xs free" data-ussd="*152#">*152#</a>
+					</td>
+				</tr>
+				</tbody>
+			</table>
+
+			<h4 class="text-center">Voice Bundle</h4>
+			<table class="table table-bordered table-condensed bundle-offer">
+				<thead>
+				<tr>
+					<th rowspan="2">Bundle</th>
+					<th colspan="3">Offer</th>
+				</tr>
+				<tr>
+					<th>Charge</th>
+					<th>Validity</th>
+					<th>USSD</th>
+				</tr>
+				</thead>
+				<tbody class="text-center">
+				<tr>
+					<td colspan="5">
+						Teletalk doesn't offer any voice bundle.<br />
+						Tap <a class="btn btn-default btn-xs" href="bundle-offers.html">here</a> to see bundle offers.
+					</td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</body>
+</html>

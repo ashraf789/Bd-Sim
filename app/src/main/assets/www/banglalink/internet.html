@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>BD All SIM Manager</title>
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/app.css" rel="stylesheet">
+    <link rel="apple-touch-icon" href="../images/sims.png" />
+
+    <script src="../js/angular.min.js"></script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../js/jquery.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/app.js"></script>
+</head>
+<body class="banglalink" ng-app="simApp">
+    ﻿<div class="container">
+    	<div class="row">
+    		<div class="well well-sm text-center">
+    			Check Internet Balance (Free) <a class="btn btn-default btn-xs" href="#" data-ussd="*5000*500#">*5000*500#</a>
+    		</div>
+
+    		<h4 class="text-center">Internet Packs (Prepaid)</h4>
+    		<h4 class="text-center">Generic Volume Packs</h4>
+    		<table class="table table-bordered table-condensed internet-package">
+    			<thead>
+    			    <tr>
+    				    <th rowspan="2" data-field="volume">Volume</th>
+    					<th rowspan="2" data-field="validity">Validity</th>
+    					<th rowspan="2" data-field="charge">Price</th>
+    					<th>Auto Renew</th>
+    				</tr>
+    				<tr>
+    				    <th>W/O Renew</th>
+    				<tr>
+    			</thead>
+    			<tbody class="text-center">
+    				<tr>
+    					<td rowspan="2">3 MB</td>
+    					<td rowspan="2">1 d</td>
+    					<td rowspan="2">1</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*518#">*5000*518#</a></td>
+    				</tr>
+    				<tr>
+    				    <td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*418#">*5000*418#</a></td>
+    				</tr>
+    				<tr>
+    					<td rowspan="2">7 MB</td>
+    					<td rowspan="2">1 d</td>
+    					<td rowspan="2">2.5</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*513#">*5000*513#</a></td>
+    				</tr>
+    				<tr>
+    				    <td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*413#">*5000*413#</a></td>
+    				</tr>
+    				<tr>
+    					<td rowspan="2">12 MB</td>
+    					<td rowspan="2">1 d</td>
+    					<td rowspan="2">4</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*520#">*5000*520#</a></td>
+    				</tr>
+    				<tr>
+    				    <td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*420#">*5000*420#</a></td>
+    				</tr>
+    				<tr>
+    					<td rowspan="2">25 MB</td>
+    					<td rowspan="2">1 d</td>
+    					<td rowspan="2">8</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*529#">*5000*529#</a></td>
+    				</tr>
+    				<tr>
+    				    <td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*429#">*5000*429#</a></td>
+    				</tr>
+    				<tr>
+    					<td rowspan="2">45 MB</td>
+    					<td rowspan="2">1 d</td>
+    					<td rowspan="2">10</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*543#">*5000*543#</a></td>
+    				</tr>
+    				<tr>
+    				    <td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*443#">*5000*443#</a></td>
+    				</tr>
+    				<tr>
+    					<td rowspan="2">60 MB</td>
+    					<td rowspan="2">3 d</td>
+    					<td rowspan="2">15</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*502#">*5000*502#</a></td>
+    				</tr>
+    				<tr>
+    				    <td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*402#">*5000*402#</a></td>
+    				</tr>
+    				<tr>
+    					<td rowspan="2">100 MB</td>
+    					<td rowspan="2">7 d</td>
+    					<td rowspan="2">20</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*522#">*5000*522#</a></td>
+    				</tr>
+    				<tr>
+    				    <td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*422#">*5000*422#</a></td>
+    				</tr>
+    				<tr>
+    					<td rowspan="2">120 MB</td>
+    					<td rowspan="2">30 d</td>
+    					<td rowspan="2">50</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*523#">*5000*523#</a></td>
+    				</tr>
+    				<tr>
+    				    <td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*423#">*5000*423#</a></td>
+    				</tr>
+    				<tr>
+    					<td rowspan="2">160 MB</td>
+    					<td rowspan="2">7 d</td>
+    					<td rowspan="2">30</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*501#">*5000*501#</a></td>
+    				</tr>
+    				<tr>
+    				    <td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*401#">*5000*401#</a></td>
+    				</tr>
+    				<tr>
+    					<td rowspan="2">250 MB</td>
+    					<td rowspan="2">10 d</td>
+    					<td rowspan="2">75</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*517#">*5000*517#</a></td>
+    				</tr>
+    				<tr>
+    				    <td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*417#">*5000*417#</a></td>
+    				</tr>
+    				<tr>
+    					<td rowspan="2">300 MB</td>
+    					<td rowspan="2">30 d</td>
+    					<td rowspan="2">99</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*503#">*5000*503#</a></td>
+    				</tr>
+    				<tr>
+    				    <td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*403#">*5000*403#</a></td>
+    				</tr>
+    				<tr>
+    					<td rowspan="2">500 MB</td>
+    					<td rowspan="2">7 d</td>
+    					<td rowspan="2">100</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*582#">*5000*582#</a></td>
+    				</tr>
+    				<tr>
+    				    <td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*482#">*5000*482#</a></td>
+    				</tr>
+    				<tr>
+    					<td rowspan="2">600 MB</td>
+    					<td rowspan="2">30 d</td>
+    					<td rowspan="2">150</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*504#">*5000*504#</a></td>
+    				</tr>
+    				<tr>
+    				    <td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*404#">*5000*404#</a></td>
+    				</tr>
+    				<tr>
+    					<td rowspan="2">1 GB</td>
+    					<td rowspan="2">30 d</td>
+    					<td rowspan="2">210</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*581#">*5000*581#</a></td>
+    				</tr>
+    				<tr>
+    				    <td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*481#">*5000*481#</a></td>
+    				</tr>
+    				<tr>
+    					<td rowspan="2">1.5 GB</td>
+    					<td rowspan="2">30 d</td>
+    					<td rowspan="2">275</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*511#">*5000*511#</a></td>
+    				</tr>
+    				<tr>
+    				    <td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*411#">*5000*411#</a></td>
+    				</tr>
+    				<tr>
+    					<td rowspan="2">2 GB</td>
+    					<td rowspan="2">30 d</td>
+    					<td rowspan="2">350</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*506#">*5000*506#</a></td>
+    				</tr>
+    				<tr>
+    				    <td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*406#">*5000*406#</a></td>
+    				</tr>
+    				<tr>
+    					<td rowspan="2">4 GB</td>
+    					<td rowspan="2">30 d</td>
+    					<td rowspan="2">500</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*508#">*5000*508#</a></td>
+    				</tr>
+    				<tr>
+    				    <td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*408#">*5000*408#</a></td>
+    				</tr>
+    				<tr>
+    					<td rowspan="2">8 GB</td>
+    					<td rowspan="2">30 d</td>
+    					<td rowspan="2">900</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*509#">*5000*509#</a></td>
+    				</tr>
+    				<tr>
+    				    <td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*409#">*5000*409#</a></td>
+    				</tr>
+    				<tr>
+    					<td rowspan="2">15 GB</td>
+    					<td rowspan="2">30 d</td>
+    					<td rowspan="2">1500</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*510#">*5000*510#</a></td>
+    				</tr>
+    				<tr>
+    				    <td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*410#">*5000*410#</a></td>
+    				</tr>
+    				<tr>
+    					<td colspan="5">
+    				        To deactivate a pack from this group:
+    						<br /><br/ > Please dial <a class="btn btn-default btn-xs" data-ussd="*5000*536#" data-confirm="Are you sure you want to deactivate the pack?">*5000*536#</a>
+    					</td>
+    				</tr>	
+    			</tbody>
+    		</table>
+		
+    		<h4 class="text-center">Smart Volume Packs</h4>
+		
+    		<table class="table table-bordered table-condensed internet-package">
+    			<thead>
+    			    <tr>
+    				    <th rowspan="2" data-field="volume">Volume</th>
+    					<th rowspan="2" data-field="validity">Validity</th>
+    					<th rowspan="2" data-field="charge">Price</th>
+    					<th>Auto Renew</th>
+    				</tr>
+    				<tr>
+    				    <th>W/O Renew</th>
+    				<tr>
+    			</thead>
+    			<tbody class="text-center">
+    				<tr>
+    					<td rowspan="2">200 MB</td>
+    					<td rowspan="2">7 d</td>
+    					<td rowspan="2">50</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*562#">*5000*562#</a></td>
+    				</tr>
+    				<tr>
+    				    <td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*462#">*5000*462#</a></td>
+    				</tr>
+    				<tr>
+    					<td rowspan="2">500 MB</td>
+    					<td rowspan="2">30 d</td>
+    					<td rowspan="2">109</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*548#">*5000*548#</a></td>
+    				</tr>
+    				<tr>
+    				    <td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*448#">*5000*448#</a></td>
+    				</tr>
+    				<tr>
+    					<td rowspan="2">1 GB</td>
+    					<td rowspan="2">30 d</td>
+    					<td rowspan="2">189</td>
+    					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*547#">*5000*547#</a></td>
+    				</tr>
+    				<tr>
+    				    <td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*447#">*5000*447#</a></td>
+    				</tr>
+    				<tr>
+    				    <td colspan="5">
+    				        To deactivate a pack from this group:
+    						<br /><br/ > Please dial <a class="btn btn-default btn-xs" data-ussd="*5000*549#" data-confirm="Are you sure you want to deactivate the pack?">*5000*549#</a>
+    					</td>
+    				</tr>
+    			</tbody>
+    		</table>
+		
+    		<h4 class="text-center">Recharge Packs</h4>
+
+    		<table class="table table-bordered table-condensed internet-package">
+    			<thead>
+    				<tr>
+    					<th>Volume</th>
+    					<th>Validity</th>
+    					<th>Recharge</th>
+    				</tr>
+    			</thead>
+    			<tbody class="text-center">
+    				<tr>
+    					<td>16 MB</td>
+    					<td>2 d</td>
+    					<td>Tk. 8</td>
+    				</tr>
+    				<tr>
+    					<td>18 MB</td>
+    					<td>3 d</td>
+    					<td>Tk. 9</td>
+    				</tr>
+    				<tr>
+    					<td>60 MB</td>
+    					<td>10 d</td>
+    					<td>Tk. 17</td>
+    				</tr>
+    				<tr>
+    					<td>77 MB</td>
+    					<td>5 d</td>
+    					<td>Tk. 37</td>
+    				</tr>
+    				<tr>
+    					<td>100 MB</td>
+    					<td>7 d</td>
+    					<td>Tk. 47</td>
+    				</tr>
+    				<tr>
+    					<td>230 MB</td>
+    					<td>30 d</td>
+    					<td>Tk. 97</td>
+    				</tr>
+    				<tr>
+    					<td>400 MB</td>
+    					<td>30 d</td>
+    					<td>Tk. 147</td>
+    				</tr>
+    				<tr>
+    					<td>550 MB</td>
+    					<td>30 d</td>
+    					<td>Tk. 197</td>
+    				</tr>
+    				<tr>
+    					<td>1 GB</td>
+    					<td>30 d</td>
+    					<td>Tk. 317</td>
+    				</tr>
+    				<tr>
+    					<td>2 GB</td>
+    					<td>30 d</td>
+    					<td>Tk. 399</td>
+    				</tr>
+    				<tr>
+    					<td>8 GB</td>
+    					<td>30 d</td>
+    					<td>Tk. 1093</td>
+    				</tr>
+    				<tr>
+    					<td>20 GB</td>
+    					<td>30 d</td>
+    					<td>Tk. 2300</td>
+    				</tr>
+    				<tr>
+    				    <td colspan="3">
+    				        Balance Check <a href="#" class="btn btn-default btn-xs free" data-ussd="*124*50#">*124*50#</a></td>
+    					</td>
+    				</tr>
+    			</tbody>
+    		</table>
+    	</div>
+    </div>
+
+	﻿<div class="container">
+		<div class="row">
+			<div class="well well-sm text-center">
+				Check Facebook Balance (Free) <a class="btn btn-default btn-xs" href="#" data-ussd="*5000*500#">*5000*500#</a>
+			</div>
+
+			<h4 class="text-center">Facebook Packs</h4>
+			<table class="table table-bordered table-condensed internet-package">
+				<thead>
+				<tr>
+					<th rowspan="2" data-field="volume">Volume</th>
+					<th rowspan="2" data-field="validity">Validity</th>
+					<th rowspan="2" data-field="charge">Price</th>
+					<th>Auto Renew</th>
+				</tr>
+				<tr>
+					<th>W/O Renew</th>
+				<tr>
+				</thead>
+				<tbody class="text-center">
+				<tr>
+					<td rowspan="2">40 MB</td>
+					<td rowspan="2">1 d</td>
+					<td rowspan="2">4</td>
+					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*532#">*5000*532#</a></td>
+				</tr>
+				<tr>
+					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*432#">*5000*432#</a></td>
+				</tr>
+				<tr>
+					<td rowspan="2">100 MB</td>
+					<td rowspan="2">2 d</td>
+					<td rowspan="2">10</td>
+					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*530#">*5000*530#</a></td>
+				</tr>
+				<tr>
+					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*430#">*5000*430#</a></td>
+				</tr>
+				<tr>
+					<td colspan="5">
+						To deactivate a pack from this group:
+						<br /><br/ > Please dial <a class="btn btn-default btn-xs" data-ussd="*5000*538#" data-confirm="Are you sure you want to deactivate the pack?">*5000*538#</a>
+					</td>
+				</tr>
+				</tbody>
+			</table>
+
+			<h4 class="text-center">Free Facebook</h4>
+			<table class="table table-bordered table-condensed bundle-offer">
+				<thead>
+				<tr>
+					<th>Click<a class="btn btn-default btn-xs" href="http://0.facebook.com">0.facebook.com</a></th>
+				</tr>
+				</thead>
+				<tbody class="text-center">
+				<tr>
+					<td>Data Charges Applicable only:<br>1. If you connect any other link/site. <br>2. If you open any picture or images in the page. </td>
+				</tr>
+				</tbody>
+			</table>
+
+			<h4 class="text-center">Other Social Packs</h4>
+			<table class="table table-bordered table-condensed internet-package">
+				<thead>
+				<tr>
+					<th rowspan="2" data-field="volume">Pack</th>
+					<th rowspan="2" data-field="volume">Volume</th>
+					<th rowspan="2" data-field="validity">Validity</th>
+					<th rowspan="2" data-field="charge">Price</th>
+					<th>Auto Renew</th>
+				</tr>
+				<tr>
+					<th>W/O Renew</th>
+				<tr>
+				</thead>
+				<tbody class="text-center">
+				<tr>
+					<td rowspan="2">1. FB/ WhatsApp/ Viber</td>
+					<td rowspan="2">20 MB <br> (FUP)</td>
+					<td rowspan="2">1 d</td>
+					<td rowspan="2">1</td>
+					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*514#">*5000*514#</a></td>
+				</tr>
+				<tr>
+					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*414#">*5000*414#</a></td>
+				</tr>
+				<tr>
+					<td rowspan="2">2. Viber</td>
+					<td rowspan="2">20 MB <br> (FUP)</td>
+					<td rowspan="2">1 d</td>
+					<td rowspan="2">6</td>
+					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*535#">*5000*535#</a></td>
+				</tr>
+				<tr>
+					<td><a href="#" class="btn btn-default btn-xs" data-ussd="*5000*435#">*5000*435#</a></td>
+				</tr>
+				<tr>
+					<td colspan="5">
+						To deactivate 1, dial <a class="btn btn-default btn-xs" data-ussd="*5000*537#" data-confirm="Are you sure you want to deactivate the pack?">*5000*537#</a>
+						<br><br> To deactivate 2, dial <a class="btn btn-default btn-xs" data-ussd="*5000*539#" data-confirm="Are you sure you want to deactivate the pack?">*5000*539#</a>
+					</td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</body>
+</html>

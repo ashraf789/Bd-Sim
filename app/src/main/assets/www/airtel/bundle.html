@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>BD All SIM Manager</title>
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/app.css" rel="stylesheet">
+    <link rel="apple-touch-icon" href="../images/sims.png" />
+
+    <script src="../js/angular.min.js"></script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../js/jquery.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/app.js"></script>
+</head>
+<body class="airtel" ng-app="simApp">
+    ﻿<div class="container">
+    	<div class="row">
+    		<h4 class="text-center">Bundle Offer</h4>
+		
+    		<table class="table table-bordered table-condensed bundle-offer">
+    			<thead>
+    				<tr>
+    					<th colspan="2" data-field="offer">Offer</th>
+    					<th rowspan="2">USSD</th>
+    				</tr>
+    				<tr>
+    					<th data-field="charge">Charge</th>
+    					<th data-field="validity">Validity</th>
+    				</tr>
+    			</thead>
+    			<tbody class="text-center">
+    				<tr>
+    					<td colspan="2" class="offer">30 min + 13 SMS (Airtel)</td>
+    					<td rowspan="2"><a href="#" class="btn btn-default btn-xs" data-ussd="*121*309#">*121*309#</a></td>
+    				</tr>
+    				<tr>
+    					<td>10</td>
+    					<td>2 d</td>
+    				</tr>
+    				<tr>
+    					<td colspan="2" class="offer">85 min + 27 SMS (Airtel)</td>
+    					<td rowspan="2"><a href="#" class="btn btn-default btn-xs" data-ussd="*121*310#">*121*310#</a></td>
+    				</tr>
+    				<tr>
+    					<td>25</td>
+    					<td>4 d</td>
+    				</tr>
+    				<tr>
+    					<td colspan="2" class="offer">170 min + 52 SMS (Airtel)</td>
+    					<td rowspan="2"><a href="#" class="btn btn-default btn-xs" data-ussd="*121*306#">*121*306#</a></td>
+    				</tr>
+    				<tr>
+    					<td>50</td>
+    					<td>9 d</td>
+    				</tr>
+    				<tr>
+    					<td colspan="2" class="offer">400 min + 103 SMS (Airtel)</td>
+    					<td rowspan="2"><a href="#" class="btn btn-default btn-xs" data-message="STARTD" data-number="4444">STARTD</a></td>
+    				</tr>
+    				<tr>
+    					<td>100</td>
+    					<td>15 d</td>
+    				</tr>
+    				<tr>
+    					<td colspan="2" class="offer">1200 min + 303 SMS (Airtel)</td>
+    					<td rowspan="2"><a href="#" class="btn btn-default btn-xs" data-ussd="*121*308#">*121*308#</a></td>
+    				</tr>
+    				<tr>
+    					<td>300</td>
+    					<td>45 d</td>
+    				</tr>
+    				<tr>
+    					<td colspan="2" class="offer">20 min + 20 SMS + 5 MMS + <br />10 MB (Airtel)</td>
+    					<td rowspan="2"><a href="#" class="btn btn-default btn-xs" data-ussd="*121*301#">*121*301#</a></td>
+    				</tr>
+    				<tr>
+    					<td>5</td>
+    					<td>1 d</td>
+    				</tr>
+    				<tr>
+    					<td colspan="2" class="offer">36 min + 9 SMS + 9 MMS + <br />9 MB (Airtel)</td>
+    					<td rowspan="2"><a href="#" class="btn btn-default btn-xs" data-ussd="*121*302#">*121*302#</a></td>
+    				</tr>
+    				<tr>
+    					<td>9</td>
+    					<td>1 d</td>
+    				</tr>
+    				<tr>
+    					<td colspan="2" class="offer">50 min + 30 SMS + <br />30 MMS + 30 MB (Airtel)</td>
+    					<td rowspan="2"><a href="#" class="btn btn-default btn-xs" data-ussd="*121*303#">*121*303#</a></td>
+    				</tr>
+    				<tr>
+    					<td>30</td>
+    					<td>3 d</td>
+    				</tr>
+    				<tr>
+    				<td colspan="3">To check volume, dial <a href="#" class="btn btn-default btn-xs free" data-ussd="*778*2525#">*778*2525#</a></td>
+    				</tr>
+    			</tbody>
+    		</table>
+		
+    		<h4 class="text-center">Recharge Bundle Offer</h4>
+		
+    		<table class="table table-bordered table-condensed bundle-offer">
+    			<thead>
+    				<tr>
+    					<th colspan="3" data-field="offer">Recharge Offer</th>
+    					<th rowspan="2">USSD</th>
+    				</tr>
+    				<tr>
+    					<th data-field="charge">Recharge</th>
+    					<th data-field="validity">Validity</th>
+    					<th>Time</th>
+    				</tr>
+    			</thead>
+    			<tbody class="text-center">
+    				<tr>
+    					<td colspan="3" class="offer">75 min + 80 SMS + 23 MB (Airtel)</td>
+    					<td rowspan="2"><a href="#" class="btn btn-default btn-xs" data-ussd="*121*23#">*121*23#</a></td>
+    				</tr>
+    				<tr>
+    					<td>23</td>
+    					<td>3 d</td>
+    					<td>24 hr</td>
+    				</tr>
+    				<tr>
+    					<td colspan="3" class="offer">150 min + 160 SMS + 16 MB (Airtel)</td>
+    					<td rowspan="2"><a href="#" class="btn btn-default btn-xs" data-ussd="*121*46#">*121*46#</a></td>
+    				</tr> 
+    				<tr>
+    					<td>46</td>
+    					<td>7 d</td>
+    					<td>24 hr</td>
+    				</tr>
+    				<tr>
+    					<td colspan="3" class="offer">380 min + 400 SMS + 40 MB (Airtel)</td>
+    					<td rowspan="2"><a href="#" class="btn btn-default btn-xs" data-ussd="*121*307#">*121*307#</a></td>
+    				</tr> 
+    				<tr>
+    					<td>115</td>
+    					<td>10 d</td>
+    					<td>24 hr</td>
+    				</tr>
+    				<tr>
+    					<td colspan="3" class="offer">750 min + 800 SMS + 500 MB (Airtel)</td>
+    					<td rowspan="2">N/A</a></td>
+    				</tr> 
+    				<tr>
+    					<td>228</td>
+    					<td>30 d</td>
+    					<td>24 hr</td>
+    				</tr>
+    				<tr>
+    				    <td colspan="4">
+    			          To check volume, dial <a class="btn btn-default btn-xs free" href="#" data-ussd="*778*2525#">*778*2525#</a>
+    					</td>
+    		        </tr>
+    			</tbody>
+    		</table>
+		
+    		<h4 class="text-center">Mixed Bundle Offer</h4>
+		
+    		<table class="table table-bordered table-condensed bundle-offer">
+    			<thead>
+    				<tr>
+    					<th colspan="3" data-field="offer">Recharge Offer</th>
+    					<th rowspan="2">USSD</th>
+    				</tr>
+    				<tr>
+    					<th data-field="charge">Recharge</th>
+    					<th data-field="validity">Validity</th>
+    					<th>Time</th>
+    				</tr>
+    			</thead>
+    			<tbody class="text-center">
+    				<tr>
+    					<td colspan="3" class="offer">15 min (Any), <br />15 min + 16 SMS +16 MB (Airtel)</td>
+    					<td rowspan="2">N/A</td>
+    				</tr>
+    				<tr>
+    					<td>16</td>
+    					<td>2 d</td>
+    					<td>24 hr</td>
+    				</tr>
+    				<tr>
+    					<td colspan="3" class="offer">100 min + 100 SMS (Any), Unlimited FB</td>
+    					<td rowspan="2">N/A</td>
+    				</tr> 
+    				<tr>
+    					<td>74</td>
+    					<td>7 d</td>
+    					<td>24 hr</td>
+    				</tr>
+    				<tr>
+    					<td colspan="3" class="offer">15 min (Any), <br />15 min + 15 SMS + 15 MB (Airtel) </td>
+    					<td rowspan="2"><a href="#" class="btn btn-default btn-xs" data-ussd="*121*201#">*121*201#</a></td>
+    				</tr> 
+    				<tr>
+    					<td>15</td>
+    					<td>2 d</td>
+    					<td>24 hr</td>
+    				</tr>
+    				<tr>
+    					<td colspan="3" class="offer">55 min (Any), <br />55 min + 55 SMS + 55 MB (Airtel)</td>
+    					<td rowspan="2"><a href="#" class="btn btn-default btn-xs" data-ussd="*121*202#">*121*202#</a></td>
+    				</tr> 
+    				<tr>
+    					<td>55</td>
+    					<td>7 d</td>
+    					<td>24 hr</td>
+    				</tr>
+    				<tr>
+    					<td colspan="3" class="offer">200 min (Any), <br />200 min + 200 SMS + 200 MB (Airtel)</td>
+    					<td rowspan="2"><a href="#" class="btn btn-default btn-xs" data-ussd="*121*204#">*121*204#</a></td>
+    				</tr> 
+    				<tr>
+    					<td>199</td>
+    					<td>18 d</td>
+    					<td>24 hr</td>
+    				</tr>
+    				<tr>
+    				    <td colspan="4">
+    			          To check volume, dial:
+    					</td>
+    		        </tr>
+    				<tr>
+                        <td colspan="4">
+                            <a href="#" class="btn btn-default btn-xs free" data-ussd="*778*1616#">*778*1616#</a> (for Tk. 16)
+    					</td>
+    				</tr>
+    				<tr>
+    					<td colspan="4">
+                            <a href="#" class="btn btn-default btn-xs free" data-ussd="*778*7474#">*778*7474#</a> (for Tk. 74)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            <a href="#" class="btn btn-default btn-xs free" data-ussd="*778*1555#">*778*1555#</a> (for all other bundles)
+                        </td>
+                    </tr>
+    			</tbody>
+    		</table>
+		
+    		<h4 class="text-center">Monthly Bundle Offer</h4>
+		
+    		<table class="table table-bordered table-condensed bundle-offer">
+    			<thead>
+    				<tr>
+    					<th colspan="3" data-field="offer">Offer</th>
+    					<th rowspan="2">USSD</th>
+    				</tr>
+    				<tr>
+    					<th data-field="charge">Charge</th>
+    					<th data-field="validity">Validity</th>
+    					<th>Time</th>
+    				</tr>
+    			</thead>
+    			<tbody class="text-center">
+    				<tr>
+    					<td colspan="3" class="offer">480 min + 500 SMS (Any), 1 GB </td>
+    					<td rowspan="2"><a href="#" class="btn btn-default btn-xs" data-ussd="*121*349#">*121*349#</a></td>
+    				</tr>
+    				<tr>
+    					<td>349</td>
+    					<td>30 d</td>
+    					<td>24 hr</td>
+    				</tr>
+    				<tr>
+    					<td colspan="3" class="offer">280 min + 400 SMS (Any), 500 MB</td>
+    					<td rowspan="2"><a href="#" class="btn btn-default btn-xs" data-ussd="*121*207#">*121*207#</a></td>
+    				</tr> 
+    				<tr>
+    					<td>207</td>
+    					<td>30 d</td>
+    					<td>24 hr</td>
+    				</tr>
+    				<tr>
+    					<td colspan="3" class="offer">780 min + 800 SMS (Any), 2 GB</td>
+    					<td rowspan="2"><a href="#" class="btn btn-default btn-xs" data-ussd="*121*574#">*121*574#</a></td>
+    				</tr> 
+    				<tr>
+    					<td>574</td>
+    					<td>30 d</td>
+    					<td>24 hr</td>
+    				</tr>
+    				<tr>
+    				    <td colspan="4">
+    			          To check volume, dial <a class="btn btn-default btn-xs free" href="#" data-ussd="*778*6666#">*778*6666#</a>
+    					</td>
+    		        </tr>
+    			</tbody>
+    		</table>
+    	</div>  
+    </div>
+
+	﻿<div class="container">
+		<div class="row">
+			<h4 class="text-center">SMS Bundle</h4>
+			<table class="table table-bordered table-condensed bundle-offer">
+				<thead>
+				<tr>
+					<th rowspan="2">Bundle</th>
+					<th colspan="3" data-field="offer">Offer</th>
+				</tr>
+				<tr>
+					<th data-field="charge">Charge</th>
+					<th data-field="validity">Validity</th>
+					<th>USSD</th>
+				</tr>
+				</thead>
+				<tbody class="text-center">
+				<tr>
+					<td rowspan="2">Pack-1</td>
+					<td colspan="3" class="offer">100 SMS (Airtel)</td>
+				</tr>
+				<tr>
+					<td>8.99</td>
+					<td>1 d</td>
+					<td colspan="2">
+						<a class="btn btn-default btn-xs" data-ussd="*321*103#">*321*103#</a>
+					</td>
+				</tr>
+				<tr>
+					<td rowspan="2">Pack-2</td>
+					<td colspan="3" class="offer">25 SMS (Airtel)</td>
+				</tr>
+				<tr>
+					<td>2.99</td>
+					<td>1 d</td>
+					<td colspan="2">
+						<a class="btn btn-default btn-xs" data-ussd="*321*102#">*321*102#</a>
+					</td>
+				</tr>
+				</tbody>
+			</table>
+
+			<h4 class="text-center">MMS Bundle</h4>
+			<table class="table table-bordered table-condensed bundle-offer">
+				<thead>
+				<tr>
+					<th rowspan="2">Bundle</th>
+					<th colspan="3" data-field="offer">Offer</th>
+				</tr>
+				<tr>
+					<th data-field="charge">Charge</th>
+					<th data-field="validity">Validity</th>
+					<th>USSD</th>
+				</tr>
+				</thead>
+				<tbody class="text-center">
+				<tr>
+					<td rowspan="2">Pack-1</td>
+					<td colspan="3" class="offer">10 MMS (Airtel)</td>
+				</tr>
+				<tr>
+					<td>2.99</td>
+					<td>1 d</td>
+					<td colspan="2">
+						<a class="btn btn-default btn-xs" data-ussd="*321*100#">*321*100#</a>
+					</td>
+				</tr>
+				<tr>
+					<td rowspan="2">Pack-2</td>
+					<td colspan="3" class="offer">50 MMS (Airtel)</td>
+				</tr>
+				<tr>
+					<td>6.99</td>
+					<td>1 d</td>
+					<td colspan="2">
+						<a class="btn btn-default btn-xs" data-ussd="*321*101#">*321*101#</a>
+					</td>
+				</tr>
+				</tbody>
+			</table>
+
+			<h4 class="text-center">Combo Pack</h4>
+			<table class="table table-bordered table-condensed bundle-offer">
+				<thead>
+				<tr>
+					<th rowspan="2">Bundle</th>
+					<th colspan="3" data-field="offer">Offer</th>
+				</tr>
+				<tr>
+					<th data-field="charge">Charge</th>
+					<th data-field="validity">Validity</th>
+					<th>USSD</th>
+				</tr>
+				</thead>
+				<tbody class="text-center">
+				<tr>
+					<td rowspan="2">Pack-1</td>
+					<td colspan="3" class="offer">3 MMS, 5 SMS & 1 Mb (Airtel)</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>1 d</td>
+					<td colspan="2">
+						<a class="btn btn-default btn-xs" data-ussd="*321*104#">*321*104#</a>
+					</td>
+				</tr>
+				<tr>
+					<td rowspan="2">Pack-2</td>
+					<td colspan="3" class="offer">5 MMS, 5 SMS & 3 Mb (Airtel)</td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>1 d</td>
+					<td colspan="2">
+						<a class="btn btn-default btn-xs" data-ussd="*321*105#">*321*105#</a>
+					</td>
+				</tr>
+				<tr>
+					<td rowspan="2">Pack-3</td>
+					<td colspan="3" class="offer">500 SMS & 150 MMS (Airtel)</td>
+				</tr>
+				<tr>
+					<td>50</td>
+					<td>7 d</td>
+					<td colspan="2">
+						<a class="btn btn-default btn-xs" data-ussd="*321*106#">*321*106#</a>
+					</td>
+				</tr>
+				<tr>
+					<td rowspan="2">Pack-4</td>
+					<td colspan="3" class="offer">300 SMS & 75 MMS (Airtel)</td>
+				</tr>
+				<tr>
+					<td>30</td>
+					<td>3 d</td>
+					<td colspan="2">
+						<a class="btn btn-default btn-xs" data-ussd="*321*107#">*321*107#</a>
+					</td>
+				</tr>
+				<tr>
+					<td rowspan="2">Pack-5</td>
+					<td colspan="3" class="offer">200 SMS & 50 MMS (Airtel)</td>
+				</tr>
+				<tr>
+					<td>50</td>
+					<td>2 d</td>
+					<td colspan="2">
+						<a class="btn btn-default btn-xs" data-ussd="*321*108#">*321*108#</a>
+					</td>
+				</tr>
+				<tr>
+					<td rowspan="2">Pack-6</td>
+					<td colspan="3" class="offer">137 SMS & 137 MMS (Airtel)</td>
+				</tr>
+				<tr>
+					<td>32.17</td>
+					<td>3 d</td>
+					<td colspan="2">
+						<a class="btn btn-default btn-xs" data-ussd="*321*109#">*321*109#</a>
+					</td>
+				</tr>
+				<tr>
+					<td rowspan="2">Pack-7</td>
+					<td colspan="3" class="offer">147 SMS & 147 MMS (Airtel)</td>
+				</tr>
+				<tr>
+					<td>40.87</td>
+					<td>7 d</td>
+					<td colspan="2">
+						<a class="btn btn-default btn-xs" data-ussd="*321*110#">*321*110#</a>
+					</td>
+				</tr>
+				<tr>
+					<td rowspan="2">Pack-8</td>
+					<td colspan="3" class="offer">197 SMS & 197 MMS (Airtel)</td>
+				</tr>
+				<tr>
+					<td>84.35</td>
+					<td>15 d</td>
+					<td colspan="2">
+						<a class="btn btn-default btn-xs" data-ussd="*321*111#">*321*111#</a>
+					</td>
+				</tr>
+				<tr>
+					<td rowspan="2">Pack-9</td>
+					<td colspan="3" class="offer">297 SMS & 297 MMS (Airtel)</td>
+				</tr>
+				<tr>
+					<td>258.26</td>
+					<td>21 d</td>
+					<td colspan="2">
+						<a class="btn btn-default btn-xs" data-ussd="*321*000#">*321*000#</a>
+					</td>
+				</tr>
+				</tbody>
+			</table>
+
+			<h4 class="text-center">Voice Bundle</h4>
+			<table class="table table-bordered table-condensed bundle-offer">
+				<thead>
+				<tr>
+					<th rowspan="2">Bundle</th>
+					<th colspan="3">Offer</th>
+				</tr>
+				<tr>
+					<th>Charge</th>
+					<th>Validity</th>
+					<th>USSD</th>
+				</tr>
+				</thead>
+				<tbody class="text-center">
+				<tr>
+					<td colspan="5">
+						Airtel doesn't offer any voice bundle.<br />
+						Tap <a class="btn btn-default btn-xs" href="bundle-offers.html">here</a> to see bundle offers.
+					</td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</body>
+</html>

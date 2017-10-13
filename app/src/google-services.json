@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "417934491128",
+    "firebase_url": "https://bdsim-any.firebaseio.com",
+    "project_id": "bdsim-any",
+    "storage_bucket": "bdsim-any.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:417934491128:android:236d1a94bbe7f05a",
+        "android_client_info": {
+          "package_name": "com.ashraf.fnfall"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "417934491128-ofa75mhsk75tu3rdb8e11le7dt23tvqq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRf1GjeuSZfkBf_edtkoNq4IGdzbJL4-M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
